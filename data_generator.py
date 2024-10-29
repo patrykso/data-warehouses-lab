@@ -24,14 +24,14 @@ locations_rows = 20 # google sheets
 final_surveys_rows = int(enrollments_rows * 0.6) # google sheets
 
 def generate_id(i, used, filename):
-    if overwrite:  # jezeli overwrite to id ustal na podstawie ostatniego w pliku
+    if overwrite:
         courses_id = i
-    elif modify:  # dla modify, wybierz losowy wiersz, usun go i dodaj nowy
+    elif modify:  # dla modify, wybierz losowy wiersz, usun go i dodaj nowy z tym samym id
         courses_id = faker.random_int(min=1, max=check_last_value_at_column(filename, 0))
         while courses_id in used:
             courses_id = faker.random_int(min=1, max=check_last_value_at_column(filename, 0))
         delete_row(filename, 0, courses_id)
-    else:  # gdy plik jest pusty, zacznij iterowac od zera
+    else:  # gdy do pliku dopisywane sa dane, sprawdz jakie id jest ostatnie zapisane w pliku
         courses_id = i + check_last_value_at_column(filename, 0)
     
     used.append(courses_id)
@@ -325,6 +325,3 @@ if __name__ == "__main__":
                 thread.join()
         
         print("-----DATA MODIFIED-----")
-        
-    
-    
