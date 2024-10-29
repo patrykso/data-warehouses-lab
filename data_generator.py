@@ -37,7 +37,7 @@ def generate_id(i, used, filename):
     used.append(courses_id)
     return courses_id
  
-def generate_courses(rows): #todo used, 
+def generate_courses(rows):
     data = []
     used = []
     for i in range(1, rows+1):
@@ -269,7 +269,7 @@ def delete_row(filename, column, value):
 if __name__ == "__main__":
     put_modify_on_hold = False
     
-    modify_functions = { # co powinno zostac zapisane
+    modify_functions = { # co powinno zostac zmodyfikowane
         generate_locations: rows_to_modify,
         #generate_final_surveys: rows_to_modify,
         generate_courses: rows_to_modify,
