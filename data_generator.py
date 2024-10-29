@@ -153,7 +153,7 @@ def generate_courses_subjects(rows):
     data = []
     used = []
     for i in range(1, rows + 1):
-        courses_subject_id = generate_id(i, "courses_subjects.csv", used)
+        courses_subject_id = generate_id(i, used, "courses_subjects.csv")
         course_id = faker.random_int(min=1, max=check_last_value_at_column("courses.csv", 0))
         subject_id = faker.random_int(min=1, max=check_last_value_at_column("subjects.csv", 0))
         
