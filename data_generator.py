@@ -25,17 +25,17 @@ final_surveys_rows = int(enrollments_rows * 0.6) # google sheets
 
 def generate_id(i, used, filename):
     if overwrite:
-        courses_id = i
+        generated_id = i
     elif modify:  # dla modify, wybierz losowy wiersz, usun go i dodaj nowy z tym samym id
-        courses_id = faker.random_int(min=1, max=check_last_value_at_column(filename, 0))
-        while courses_id in used:
-            courses_id = faker.random_int(min=1, max=check_last_value_at_column(filename, 0))
-        delete_row(filename, 0, courses_id)
+        generated_id = faker.random_int(min=1, max=check_last_value_at_column(filename, 0))
+        while generated_id in used:
+            generated_id = faker.random_int(min=1, max=check_last_value_at_column(filename, 0))
+        delete_row(filename, 0, generated_id)
     else:  # gdy do pliku dopisywane sa dane, sprawdz jakie id jest ostatnie zapisane w pliku
-        courses_id = i + check_last_value_at_column(filename, 0)
+        generated_id = i + check_last_value_at_column(filename, 0)
     
-    used.append(courses_id)
-    return courses_id
+    used.append(generated_id)
+    return generated_id
  
 def generate_courses(rows):
     data = []
