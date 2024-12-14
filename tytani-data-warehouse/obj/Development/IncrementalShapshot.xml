@@ -1,0 +1,117 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>tytani</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>gHmBNomgrqaJwongyx3kQFvaYfM=25.11.2024 23:36:5225.11.2024 22:24:50</TimeStamp>
+        <ID>
+          <String>Tytani</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>d/OH3NEFhUOBmwfjWIq+DMVpGes=25.11.2024 22:27:3225.11.2024 22:27:32</TimeStamp>
+        <ID>
+          <String>Tytani</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gDpQyta9tbcDdtuIdFFlF4tZ8Gs=25.11.2024 22:56:4825.11.2024 22:31:00</TimeStamp>
+        <ID>
+          <String>Students</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>6KNoo0fqci2PlqNSWIMqGUpHts8=25.11.2024 22:56:4825.11.2024 22:31:00</TimeStamp>
+        <ID>
+          <String>Courses</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>OD6fG4yDb/4q7Y1DuSh8a7hYjzI=25.11.2024 22:56:4825.11.2024 22:31:00</TimeStamp>
+        <ID>
+          <String>Final Surveys Scd1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Nps6FHGdVfsd0vHDP6VifTaBKdQ=25.11.2024 22:56:4825.11.2024 22:31:00</TimeStamp>
+        <ID>
+          <String>Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Oet23Ay8fkcSlDQAkXuDmwX7aaU=25.11.2024 22:56:4825.11.2024 22:31:00</TimeStamp>
+        <ID>
+          <String>Locations</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>hPHvLrW/3BJAhDqQ3/RCrmgvnZs=25.11.2024 22:56:4825.11.2024 22:31:00</TimeStamp>
+        <ID>
+          <String>Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>/pMX7sfEjcxT0GHT6Lrg5QWioD8=25.11.2024 22:56:4825.11.2024 22:31:00</TimeStamp>
+        <ID>
+          <String>Junk</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>rX625bQqbGYUM8Rk1vdo+0iuZ8c=25.11.2024 22:56:4825.11.2024 22:31:00</TimeStamp>
+        <ID>
+          <String>Subjects</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>fb0FTt0mcHGcsqPa7IDDi1YHgX0=25.11.2024 22:56:4825.11.2024 22:31:00</TimeStamp>
+        <ID>
+          <String>Teachers</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>HiNKBu2lZ5hzeSd+4cU27UgnwBk=26.11.2024 02:07:5625.11.2024 22:31:003I20aBrDK0o+Ryum6c5HDwopqcY=26.11.2024 01:11:1225.11.2024 22:31:00</TimeStamp>
+        <ID>
+          <String>Tytani</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>n/HB/6NOdmcV0Q/KJUodUraRmqs=25.11.2024 22:21:1625.11.2024 22:21:16</TimeStamp>
+      <ID>
+        <String>tytani</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2024-12-07T19:30:06.826667Z</LastDeployed>
+</DeploymentSnapshot>
