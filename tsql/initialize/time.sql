@@ -47,17 +47,13 @@ OPTION
 (MAXRECURSION
 0);
 
--- Enable IDENTITY_INSERT for the 'time' table
 SET IDENTITY_INSERT tytani.[dbo].[time] ON;
 
--- Insert the data from the temporary table
 INSERT INTO tytani.[dbo].[time]
     (id, hour, minute, time_of_day)
 SELECT id, hour, minute, time_of_day
 FROM #TempTimeHierarchy;
 
--- Disable IDENTITY_INSERT for the 'time' table
 SET IDENTITY_INSERT tytani.[dbo].[time] OFF;
 
--- Drop the temporary table
 DROP TABLE #TempTimeHierarchy;

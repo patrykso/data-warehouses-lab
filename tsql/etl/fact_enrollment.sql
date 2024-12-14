@@ -13,8 +13,8 @@ SELECT
     e.course_id,
     d.id AS date_id,
     e.status AS status,
-    c.price AS price, -- Fetch price from the courses table
-    c.duration AS duration, -- Fetch duration from the courses table
+    c.price AS price,
+    c.duration AS duration,
     e.grade
 FROM tytani_db.[dbo].enrollments e
     JOIN tytani.[dbo].[date] d
