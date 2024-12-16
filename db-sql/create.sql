@@ -1,5 +1,6 @@
 -- Tabela students
-CREATE TABLE students (
+CREATE TABLE students
+(
     id INT IDENTITY(1,1) PRIMARY KEY,
     first_name VARCHAR(255),
     last_name VARCHAR(255),
@@ -14,7 +15,8 @@ CREATE TABLE students (
 );
 
 -- Tabela teachers
-CREATE TABLE teachers (
+CREATE TABLE teachers
+(
     id INT IDENTITY(1,1) PRIMARY KEY,
     first_name VARCHAR(255),
     last_name VARCHAR(255),
@@ -25,7 +27,8 @@ CREATE TABLE teachers (
 );
 
 -- Tabela courses
-CREATE TABLE courses (
+CREATE TABLE courses
+(
     id INT IDENTITY(1,1) PRIMARY KEY,
     name VARCHAR(255),
     description VARCHAR(255),
@@ -38,22 +41,35 @@ CREATE TABLE courses (
     max_students INT CHECK (max_students BETWEEN 0 AND 999)
 );
 
+-- Tabela subjects
+CREATE TABLE subjects
+(
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    name VARCHAR(255),
+    description VARCHAR(255),
+    category VARCHAR(255)
+);
+
 -- Tabela lessons
-CREATE TABLE lessons (
+CREATE TABLE lessons
+(
     id INT IDENTITY(1,1) PRIMARY KEY,
     course_id INT NOT NULL,
+    subject_id INT NOT NULL,
     lesson_date DATE,
     start_time TIME,
     end_time TIME,
     location_id INT NULL,
     teacher_id INT NOT NULL,
     FOREIGN KEY (course_id) REFERENCES courses(id),
-    FOREIGN KEY (teacher_id) REFERENCES teachers(id)
+    FOREIGN KEY (teacher_id) REFERENCES teachers(id),
+    FOREIGN KEY (subject_id) REFERENCES subjects(id)
     -- 'location_id' pozostaje jako INT NULL bez klucza obcego
 );
 
 -- Tabela enrollments
-CREATE TABLE enrollments (
+CREATE TABLE enrollments
+(
     id INT IDENTITY(1,1) PRIMARY KEY,
     student_id INT NOT NULL,
     course_id INT NOT NULL,
@@ -65,37 +81,33 @@ CREATE TABLE enrollments (
 );
 
 -- Tabela lesson_ratings
-CREATE TABLE lesson_ratings (
+CREATE TABLE lesson_ratings
+(
     id INT IDENTITY(1,1) PRIMARY KEY,
     student_id INT NOT NULL,
     lesson_id INT NOT NULL,
-    rating INT CHECK (rating BETWEEN 1 AND 5),
-    comment VARCHAR(255),
-    review_date DATE,
+    rating INT NULL,
+    comment VARCHAR(255) NULL,
+    review_date DATE NULL,
     FOREIGN KEY (student_id) REFERENCES students(id),
     FOREIGN KEY (lesson_id) REFERENCES lessons(id)
 );
 
 -- Tabela attendance
-CREATE TABLE attendance (
+CREATE TABLE attendance
+(
     id INT IDENTITY(1,1) PRIMARY KEY,
     session_id INT NOT NULL,
     student_id INT NOT NULL,
-    status VARCHAR(255),
+    -- status VARCHAR(255),
+    junk_id INT,
     FOREIGN KEY (session_id) REFERENCES lessons(id),
     FOREIGN KEY (student_id) REFERENCES students(id)
 );
 
--- Tabela subjects
-CREATE TABLE subjects (
-    id INT IDENTITY(1,1) PRIMARY KEY,
-    name VARCHAR(255),
-    description VARCHAR(255),
-    category VARCHAR(255)
-);
-
 -- Tabela courses_subjects
-CREATE TABLE courses_subjects (
+CREATE TABLE courses_subjects
+(
     id INT IDENTITY(1,1) PRIMARY KEY,
     course_id INT NOT NULL,
     subject_id INT NOT NULL,

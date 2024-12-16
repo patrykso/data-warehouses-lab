@@ -1,5 +1,6 @@
 -- Nadrzędne
-CREATE TABLE students (
+CREATE TABLE students
+(
     id INT PRIMARY KEY,
     first_name VARCHAR(255),
     last_name VARCHAR(255),
@@ -8,7 +9,8 @@ CREATE TABLE students (
     city VARCHAR(255)
 );
 
-CREATE TABLE courses (
+CREATE TABLE courses
+(
     id INT PRIMARY KEY,
     name VARCHAR(255),
     description VARCHAR(MAX),
@@ -17,30 +19,34 @@ CREATE TABLE courses (
     max_students_category VARCHAR(255)
 );
 
-CREATE TABLE [date] (
+CREATE TABLE [date]
+(
     id INT PRIMARY KEY,
     year INT,
     month INT,
     day INT
 );
 
-CREATE TABLE final_surveys_scd1 (
+CREATE TABLE final_surveys_scd1
+(
     id INT PRIMARY KEY,
-    course_interest_rating INT,
-    teacher_engagement_rating INT,
-    positive_comments VARCHAR(MAX),
-    negative_comments VARCHAR(MAX),
-    continue_course VARCHAR(255),
+    course_interest_rating INT NULL,
+    teacher_engagement_rating INT NULL,
+    positive_comments VARCHAR(MAX) NULL,
+    negative_comments VARCHAR(MAX) NULL,
+    continue_course VARCHAR(255) NULL,
     filled BIT
 );
 
-CREATE TABLE subjects (
+CREATE TABLE subjects
+(
     id INT PRIMARY KEY,
     name VARCHAR(255),
     description VARCHAR(MAX)
 );
 
-CREATE TABLE teachers (
+CREATE TABLE teachers
+(
     id INT PRIMARY KEY,
     first_name VARCHAR(255),
     last_name VARCHAR(255),
@@ -49,7 +55,8 @@ CREATE TABLE teachers (
     specialization VARCHAR(255)
 );
 
-CREATE TABLE locations (
+CREATE TABLE locations
+(
     id INT PRIMARY KEY,
     name VARCHAR(255),
     postal_code VARCHAR(20),
@@ -58,20 +65,23 @@ CREATE TABLE locations (
     building_number VARCHAR(50)
 );
 
-CREATE TABLE [time] (
+CREATE TABLE [time]
+(
     id INT PRIMARY KEY,
     hour INT,
     minute INT,
     time_of_day VARCHAR(50)
 );
 
-CREATE TABLE junk (
+CREATE TABLE junk
+(
     id INT PRIMARY KEY,
     status VARCHAR(255)
 );
 
 -- Zależne
-CREATE TABLE fact_enrollments (
+CREATE TABLE fact_enrollments
+(
     student_id INT,
     final_survey_id INT,
     course_id INT,
@@ -86,7 +96,8 @@ CREATE TABLE fact_enrollments (
     FOREIGN KEY (date_id) REFERENCES [date](id)
 );
 
-CREATE TABLE fact_attendance (
+CREATE TABLE fact_attendance
+(
     subject_id INT,
     student_id INT,
     teacher_id INT,

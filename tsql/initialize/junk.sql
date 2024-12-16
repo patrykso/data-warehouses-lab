@@ -4,4 +4,4 @@ VALUES
     ('Obecny'),
     ('Nieobecny'),
     ('Usprawiedliwione'),
-    ('Spóźniony')
+    ('Spozniony')
