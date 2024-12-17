@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jozef\\source\\repos\\tytani\\",
+  "WorkspaceRootPath": "C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|C:\\Users\\jozef\\source\\repos\\tytani\\Tytani.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "AbsoluteMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Tytani.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|solutionrelative:Tytani.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|C:\\Users\\jozef\\source\\repos\\tytani\\Courses.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "AbsoluteMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Courses.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|solutionrelative:Courses.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|C:\\Users\\jozef\\source\\repos\\tytani\\Junk.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "AbsoluteMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Junk.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|solutionrelative:Junk.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|C:\\Users\\jozef\\source\\repos\\tytani\\Final Surveys Scd1.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "AbsoluteMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Final Surveys Scd1.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|solutionrelative:Final Surveys Scd1.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|C:\\Users\\jozef\\source\\repos\\tytani\\Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "AbsoluteMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|solutionrelative:Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     }
   ],
@@ -36,9 +36,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Tytani.cube [Design]",
-              "DocumentMoniker": "C:\\Users\\jozef\\source\\repos\\tytani\\Tytani.cube",
+              "DocumentMoniker": "C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Tytani.cube",
               "RelativeDocumentMoniker": "Tytani.cube",
-              "ToolTip": "C:\\Users\\jozef\\source\\repos\\tytani\\Tytani.cube [Design]",
+              "ToolTip": "C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Tytani.cube [Design]",
               "RelativeToolTip": "Tytani.cube [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-12-07T19:33:10.702Z",
@@ -48,9 +48,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Courses.dim [Design]",
-              "DocumentMoniker": "C:\\Users\\jozef\\source\\repos\\tytani\\Courses.dim",
+              "DocumentMoniker": "C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Courses.dim",
               "RelativeDocumentMoniker": "Courses.dim",
-              "ToolTip": "C:\\Users\\jozef\\source\\repos\\tytani\\Courses.dim [Design]",
+              "ToolTip": "C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Courses.dim [Design]",
               "RelativeToolTip": "Courses.dim [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-12-07T19:30:36.055Z"
@@ -59,10 +59,10 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Junk.dim [Design]",
-              "DocumentMoniker": "C:\\Users\\jozef\\source\\repos\\tytani\\Junk.dim",
+              "DocumentMoniker": "C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Junk.dim",
               "RelativeDocumentMoniker": "Junk.dim",
               "ToolTip": "C:\\Users\\jozef\\source\\repos\\tytani\\Junk.dim [Design]",
-              "RelativeToolTip": "Junk.dim [Design]",
+              "RelativeToolTip": "..\\..\\repos\\tytani\\Junk.dim [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-12-07T19:26:23.18Z"
             },
@@ -70,10 +70,10 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Final Surveys Scd1.dim [Design]",
-              "DocumentMoniker": "C:\\Users\\jozef\\source\\repos\\tytani\\Final Surveys Scd1.dim",
+              "DocumentMoniker": "C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Final Surveys Scd1.dim",
               "RelativeDocumentMoniker": "Final Surveys Scd1.dim",
               "ToolTip": "C:\\Users\\jozef\\source\\repos\\tytani\\Final Surveys Scd1.dim [Design]",
-              "RelativeToolTip": "Final Surveys Scd1.dim [Design]",
+              "RelativeToolTip": "..\\..\\repos\\tytani\\Final Surveys Scd1.dim [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-12-07T19:24:33.674Z"
             },
@@ -81,10 +81,10 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Date.dim [Design]",
-              "DocumentMoniker": "C:\\Users\\jozef\\source\\repos\\tytani\\Date.dim",
+              "DocumentMoniker": "C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Date.dim",
               "RelativeDocumentMoniker": "Date.dim",
               "ToolTip": "C:\\Users\\jozef\\source\\repos\\tytani\\Date.dim [Design]",
-              "RelativeToolTip": "Date.dim [Design]",
+              "RelativeToolTip": "..\\..\\repos\\tytani\\Date.dim [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-12-07T19:20:09.488Z"
             }

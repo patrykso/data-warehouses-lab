@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/15/2024 4:50:14 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-3NFB90S"
+  DTS:CreatorName="DESKTOP-3NFB90S\igor"
+  DTS:DTSID="{1856AC3C-6D47-4D9B-B039-A97E17152EEC}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="TruncateDataWarehouseTables"
+  DTS:PackageType="5"
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{DAD0B4FF-6300-4EA2-8DE8-A656BE1C0D57}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-3NFB90S.tytani_db]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{A7752533-9113-4CD5-ADF1-0DDF8E239841}"
+      DTS:ObjectName="DESKTOP-3NFB90S.tytani_db">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-3NFB90S;Initial Catalog=tytani_db;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-TruncateDataWarehouseTables-{A7752533-9113-4CD5-ADF1-0DDF8E239841}DESKTOP-3NFB90S.tytani_db;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Truncate Data Warehouse Tables - SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{8D32BE47-35E7-44B3-82B9-0FAE27399327}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncate Data Warehouse Tables - SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{A7752533-9113-4CD5-ADF1-0DDF8E239841}"
+          SQLTask:SqlStatementSource="DECLARE @sql NVARCHAR(MAX);&#xA;SET @sql = '';&#xA;&#xA;SELECT @sql = @sql + 'ALTER TABLE ' + QUOTENAME(OBJECT_NAME(f.parent_object_id)) + ' DROP CONSTRAINT ' + QUOTENAME(f.name) + ';'&#xA;FROM sys.foreign_keys AS f&#xA;    INNER JOIN sys.foreign_key_columns AS fc ON f.object_id = fc.constraint_object_id&#xA;    INNER JOIN sys.columns AS c1 ON fc.parent_object_id = c1.object_id AND fc.parent_column_id = c1.column_id&#xA;    INNER JOIN sys.columns AS c2 ON fc.referenced_object_id = c2.object_id AND fc.referenced_column_id = c2.column_id;&#xA;&#xA;EXEC sp_executesql @sql;&#xA;&#xA;TRUNCATE TABLE fact_enrollments;&#xA;TRUNCATE TABLE fact_attendance;&#xA;TRUNCATE TABLE students;&#xA;TRUNCATE TABLE courses;&#xA;TRUNCATE TABLE [date];&#xA;TRUNCATE TABLE final_surveys_scd1;&#xA;TRUNCATE TABLE subjects;&#xA;TRUNCATE TABLE teachers;&#xA;TRUNCATE TABLE locations;&#xA;TRUNCATE TABLE [time];&#xA;TRUNCATE TABLE junk;&#xA;&#xA;SET @sql = '';&#xA;SELECT @sql = @sql + 'ALTER TABLE ' + QUOTENAME(OBJECT_NAME(f.parent_object_id)) + ' WITH CHECK ADD CONSTRAINT ' + QUOTENAME(f.name) + ' FOREIGN KEY (' + c1.name + ') REFERENCES ' + QUOTENAME(OBJECT_NAME(f.referenced_object_id)) + '(' + c2.name + ');'&#xA;FROM sys.foreign_keys AS f&#xA;    INNER JOIN sys.foreign_key_columns AS fc ON f.object_id = fc.constraint_object_id&#xA;    INNER JOIN sys.columns AS c1 ON fc.parent_object_id = c1.object_id AND fc.parent_column_id = c1.column_id&#xA;    INNER JOIN sys.columns AS c2 ON fc.referenced_object_id = c2.object_id AND fc.referenced_column_id = c2.column_id;&#xA;&#xA;EXEC sp_executesql @sql;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="290.666666666667,42.6666666666667"
+          Id="Package\Truncate Data Warehouse Tables - SQL Task"
+          TopLeft="151.874993210659,99.4499952578546" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
