@@ -3,12 +3,12 @@ IF OBJECT_ID('tempdb..#StagingFinalSurveys') IS NOT NULL
 
 CREATE TABLE #StagingFinalSurveys
 (
-    survey_id NVARCHAR(MAX) NULL,
+    survey_id INT NULL,
     student_id NVARCHAR(MAX) NULL,
     teacher_id NVARCHAR(MAX) NULL,
-    date_of_survey NVARCHAR(10) NULL,
-    course_rating NVARCHAR(MAX) NULL,
-    teacher_rating NVARCHAR(MAX) NULL,
+    date_of_survey DATE NULL,
+    course_rating INT NULL,
+    teacher_rating INT NULL,
     positive_feedback NVARCHAR(MAX) NULL,
     negative_feedback NVARCHAR(MAX) NULL,
     continue_learning NVARCHAR(50) NULL,
@@ -20,37 +20,62 @@ FROM 'C:\Users\jozef\source\PG-HD-LAB2-DATA-GENERATOR\tsql\etl\data\final_survey
 WITH (
     FIELDTERMINATOR = ',',           -- Columns separated by commas
     ROWTERMINATOR = '\n',            -- Rows separated by newline
-    FIRSTROW = 1                     -- Skip the header row
+    FIRSTROW = 1,                    -- Skip the header row
+    FORMAT = 'CSV'
 );
 
-INSERT INTO [tytani].[dbo].[final_surveys_scd1]
-    (course_interest_rating, teacher_engagement_rating, positive_comments, negative_comments,
-    continue_course, filled, db_id)
-SELECT
+-- Perform a MERGE operation to match and merge data from the staging table into the target SCD1 table.
+MERGE [tytani].[dbo].[final_surveys_scd1] AS Target
+USING (
+    SELECT
+    survey_id,
+    course_rating,
+    teacher_rating,
+    positive_feedback,
+    negative_feedback,
     CASE
-        WHEN ISNUMERIC(course_rating) = 1 THEN CAST(course_rating AS INT)
-        ELSE NULL
-    END AS course_interest_rating, -- Validate and cast course_rating
+            WHEN LOWER(continue_learning) IN ('tak', 'nie', 'nie wiem') THEN continue_learning
+            ELSE NULL
+        END AS continue_course,
     CASE
-        WHEN ISNUMERIC(teacher_rating) = 1 THEN CAST(teacher_rating AS INT)
-        ELSE NULL
-    END AS teacher_engagement_rating, -- Validate and cast teacher_rating
-    positive_feedback AS positive_comments,
-    negative_feedback AS negative_comments,
-    CASE
-        WHEN LOWER(continue_learning) IN ('tak', 'nie', 'nie wiem') THEN continue_learning
-        ELSE NULL
-    END AS continue_course, -- Retain original values for continue_learning
-    CASE
-        WHEN ISNUMERIC(course_rating) = 1 AND ISNUMERIC(teacher_rating) = 1 THEN 1
-        ELSE 0
-    END AS filled, -- Mark as filled if both ratings are valid
-    CASE
-        WHEN ISNUMERIC(survey_id) = 1 THEN CAST(survey_id AS INT)
-        ELSE NULL
-    END AS db_id
+            WHEN course_rating IS NOT NULL AND teacher_rating IS NOT NULL THEN 1
+            ELSE 0
+        END AS filled
 FROM #StagingFinalSurveys
-WHERE
-    ISNUMERIC(survey_id) = 1 AND LEN(survey_id) <= 10;
+) AS Source
+ON Target.db_id = Source.survey_id
+
+-- When a match is found, update the existing row.
+WHEN MATCHED THEN
+    UPDATE SET
+        Target.course_interest_rating = Source.course_rating,
+        Target.teacher_engagement_rating = Source.teacher_rating,
+        Target.positive_comments = Source.positive_feedback,
+        Target.negative_comments = Source.negative_feedback,
+        Target.continue_course = Source.continue_course,
+        Target.filled = Source.filled
+
+-- When no match is found, insert a new record.
+WHEN NOT MATCHED BY TARGET THEN
+INSERT
+    (
+    db_id,
+    course_interest_rating,
+    teacher_engagement_rating,
+    positive_comments,
+    negative_comments,
+    continue_course,
+    filled
+    )
+VALUES
+    (
+        Source.survey_id,
+        Source.course_rating,
+        Source.teacher_rating,
+        Source.positive_feedback,
+        Source.negative_feedback,
+        Source.continue_course,
+        Source.filled
+    );
 
 DROP TABLE #StagingFinalSurveys;
