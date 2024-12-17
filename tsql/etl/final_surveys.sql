@@ -16,7 +16,7 @@ CREATE TABLE #StagingFinalSurveys
 );
 
 BULK INSERT #StagingFinalSurveys
-FROM 'C:\Users\jozef\source\PG-HD-LAB2-DATA-GENERATOR\tsql\etl\data\final_surveys.csv'
+FROM 'C:\Users\jozef\source\PG-HD-LAB2-DATA-GENERATOR\tsql\T2\final_surveys.csv'
 WITH (
     FIELDTERMINATOR = ',',           -- Columns separated by commas
     ROWTERMINATOR = '\n',            -- Rows separated by newline
@@ -46,14 +46,14 @@ FROM #StagingFinalSurveys
 ON Target.db_id = Source.survey_id
 
 -- When a match is found, update the existing row.
-WHEN MATCHED THEN
-    UPDATE SET
-        Target.course_interest_rating = Source.course_rating,
-        Target.teacher_engagement_rating = Source.teacher_rating,
-        Target.positive_comments = Source.positive_feedback,
-        Target.negative_comments = Source.negative_feedback,
-        Target.continue_course = Source.continue_course,
-        Target.filled = Source.filled
+-- WHEN MATCHED THEN
+--     UPDATE SET
+--         Target.course_interest_rating = Source.course_rating,
+--         Target.teacher_engagement_rating = Source.teacher_rating,
+--         Target.positive_comments = Source.positive_feedback,
+--         Target.negative_comments = Source.negative_feedback,
+--         Target.continue_course = Source.continue_course,
+--         Target.filled = Source.filled
 
 -- When no match is found, insert a new record.
 WHEN NOT MATCHED BY TARGET THEN

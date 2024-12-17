@@ -1,4 +1,3 @@
--- Generowanie pełnego wymiaru czasu
 WITH
     Hours
     AS

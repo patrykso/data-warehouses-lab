@@ -116,3 +116,6 @@ CREATE TABLE fact_attendance
     FOREIGN KEY (start_time_id) REFERENCES [time](id),
     FOREIGN KEY (course_id) REFERENCES courses(id)
 );
+
+ALTER TABLE tytani.[dbo].[locations]
+ADD CONSTRAINT UQ_Locations_Fields UNIQUE (name, postal_code, city, street, building_number);

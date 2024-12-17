@@ -6,7 +6,7 @@ USING (SELECT
     phone_number,
     city
 FROM [tytani_db].dbo.[students]) AS Source
-       ON Target.email = Source.email -- Match on unique email to identify existing records
+       ON Target.email = Source.email
 WHEN MATCHED THEN
     UPDATE SET 
         Target.first_name = Source.first_name,
