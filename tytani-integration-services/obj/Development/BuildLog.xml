@@ -2,23 +2,38 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>TytaniIntegrationServices</Name>
-    <LastWriteTime>2024-12-16T22:02:16.0513868Z</LastWriteTime>
+    <LastWriteTime>2024-12-17T15:48:19.9418759Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
-      <Name>Load.dtsx</Name>
-      <LastWriteTime>2024-12-16T23:57:56.6598714Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>Initialize.dtsx</Name>
-      <LastWriteTime>2024-12-10T00:09:07.5069804Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
       <Name>TruncateDataWarehouseTables.dtsx</Name>
       <LastWriteTime>2024-12-15T15:51:22.0942003Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>BeforeETL.dtsx</Name>
+      <LastWriteTime>2024-12-17T15:45:07.388883Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>ETL T2.dtsx</Name>
+      <LastWriteTime>2024-12-17T15:48:38.2287648Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>ETL T1.dtsx</Name>
+      <LastWriteTime>2024-12-17T15:46:55.1319071Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>ETL T1 1.dtsx</Name>
+      <LastWriteTime>2024-12-17T15:46:40.0853361Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>ETL T2 1.dtsx</Name>
+      <LastWriteTime>2024-12-17T15:48:19.8942224Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

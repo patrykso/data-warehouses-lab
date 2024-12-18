@@ -1,17 +1,17 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1ab5006a-b7ed-4f2f-8b88-fa7973549b64" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f31ed0aa-3342-43fa-9e5b-db9ea373ea6d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Tytani</ID>
   <MeasureGroups>
     <MeasureGroup>
       <ID>Fact Enrollments</ID>
       <Partitions>
-        <Partition dwd:design-time-name="01d2c9b3-09a7-4df3-a44e-5382ae56277c">
+        <Partition dwd:design-time-name="23814097-fa21-4f57-8d02-d7b2e2725947">
           <ID>Fact Enrollments</ID>
           <Name>Fact Enrollments</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a01bf9ae-87d8-4ecd-8e3a-2093b8e3cd4f">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="64951a9b-a15f-4740-86af-4f889b8cc9f7">
             <DataSourceViewID>Tytani</DataSourceViewID>
             <TableID>dbo_fact_enrollments</TableID>
           </Source>
@@ -24,16 +24,36 @@
     <MeasureGroup>
       <ID>Fact Attendance</ID>
       <Partitions>
-        <Partition dwd:design-time-name="17216b06-7985-444b-b3ab-a8433071a5cb">
+        <Partition dwd:design-time-name="f08078be-1a6a-474b-a7b7-db4a21ec62c3">
           <ID>Fact Attendance</ID>
           <Name>Fact Attendance</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f1fa2395-491d-4345-854a-161a2384cd15">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="5c491315-3d20-4cc5-9115-8562d81eb1e8">
             <DataSourceViewID>Tytani</DataSourceViewID>
             <TableID>dbo_fact_attendance</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Enrollments 1</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c3b02294-2e8c-4222-a494-c7fdb6098612">
+          <ID>Fact Enrollments</ID>
+          <Name>Fact Enrollments</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="aa1e4b10-a1c5-428a-a8cc-bc43232d2001">
+            <DataSourceViewID>Tytani</DataSourceViewID>
+            <TableID>dbo_fact_enrollments</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>

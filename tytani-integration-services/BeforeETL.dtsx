@@ -5,14 +5,14 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-3NFB90S"
   DTS:CreatorName="DESKTOP-3NFB90S\igor"
-  DTS:DTSID="{90CAA896-D1DE-42DA-9396-95B5CB459570}"
+  DTS:DTSID="{A57ACE50-F015-46AA-8CEA-02A4F71B55F4}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.5685.0"
   DTS:LocaleID="1045"
-  DTS:ObjectName="Package1"
+  DTS:ObjectName="BeforeETL"
   DTS:PackageType="5"
-  DTS:VersionBuild="11"
-  DTS:VersionGUID="{27A5D452-10FC-412D-81AB-EBF1573B811F}">
+  DTS:VersionBuild="13"
+  DTS:VersionGUID="{44CC4F2F-736A-43D2-A7BB-130E22E9EA30}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -57,7 +57,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Junk - Execute SQL Task"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -74,7 +74,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Time - Execute SQL Task"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -83,24 +83,6 @@
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
-  <DTS:PrecedenceConstraints>
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint]"
-      DTS:CreationName=""
-      DTS:DTSID="{60115D25-9B74-42C8-8053-D1C2E7E93526}"
-      DTS:From="Package\Junk - Execute SQL Task"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint"
-      DTS:To="Package\Time - Execute SQL Task" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
-      DTS:CreationName=""
-      DTS:DTSID="{9709D3A1-704E-4720-8068-C41EF0125AE1}"
-      DTS:From="Package\Time - Execute SQL Task"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 1"
-      DTS:To="Package\Date - Execute SQL Task" />
-  </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -112,7 +94,11 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="195.2,41.6"
+          Id="Package\Date - Execute SQL Task"
+          TopLeft="517.142858243719,339.529411467095" />
         <NodeLayout
           Size="196.8,42.4"
           Id="Package\Junk - Execute SQL Task"
@@ -121,78 +107,6 @@
           Size="196.8,41.6"
           Id="Package\Time - Execute SQL Task"
           TopLeft="463.571429558251,225.588235096381" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="492.685714997321,173.517646996486">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="52.0857145609298,52.0705880998947"
-              Start="0,0"
-              End="52.0857145609298,44.5705880998947">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.0352940499473" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22.0352940499473"
-                    Point2="0,26.0352940499473"
-                    Point3="4,26.0352940499473" />
-                  <mssgle:LineSegment
-                    End="48.0857145609298,26.0352940499473" />
-                  <mssgle:CubicBezierSegment
-                    Point1="48.0857145609298,26.0352940499473"
-                    Point2="52.0857145609298,26.0352940499473"
-                    Point3="52.0857145609298,30.0352940499473" />
-                  <mssgle:LineSegment
-                    End="52.0857145609298,44.5705880998947" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="195.2,41.6"
-          Id="Package\Date - Execute SQL Task"
-          TopLeft="517.142858243719,339.529411467095" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="561.971429558251,267.188235096381">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="52.771428685468,72.3411763707143"
-              Start="0,0"
-              End="52.771428685468,64.8411763707143">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.1705881853572" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,32.1705881853572"
-                    Point2="0,36.1705881853572"
-                    Point3="4,36.1705881853572" />
-                  <mssgle:LineSegment
-                    End="48.771428685468,36.1705881853572" />
-                  <mssgle:CubicBezierSegment
-                    Point1="48.771428685468,36.1705881853572"
-                    Point2="52.771428685468,36.1705881853572"
-                    Point3="52.771428685468,40.1705881853572" />
-                  <mssgle:LineSegment
-                    End="52.771428685468,64.8411763707143" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>

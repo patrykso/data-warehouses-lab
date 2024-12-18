@@ -13,7 +13,7 @@ USING (
         END AS max_students_category
 FROM [tytani_db].dbo.[courses]
 ) AS Source
-ON Target.name = Source.name -- Match on course name to identify existing records
+ON Target.name = Source.name 
 WHEN MATCHED THEN
     UPDATE SET 
         Target.description = Source.description,

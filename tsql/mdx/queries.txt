@@ -1,11 +1,21 @@
+KPI 1: Ocena zadowolenia uczniów z lekcji - średnia ocena lekcji
+KPI 2: Przepisywalność uczniów - ilu uczniów zapisuje się na kolejne kursy
+
+
 1. Ile było zapisów na kursy w danym roku i miesiącu
 SELECT NON EMPTY { [Measures].[Fact Enrollments Count] } ON COLUMNS, NON EMPTY { ([Date].[Year].[Year].ALLMEMBERS * [Date].[Month].[Month].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM [Tytani] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS
  
+
+
 2. Średnia ocena kursów w danym roku i miesiącu
  SELECT NON EMPTY { [Measures].[AVG_Rating] } ON COLUMNS, NON EMPTY { ([Date].[Year].[Year].ALLMEMBERS * [Date].[Month].[Month].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM [Tytani] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS
   
+
+
 4. Liczba obecnych, nieobecnych i spóźnionych uczniów w danym roku i miesiącu w danej lokalizacji
 SELECT NON EMPTY { [Measures].[Fact Attendance Count] } ON COLUMNS, NON EMPTY { ([Junk].[Status].[Status].ALLMEMBERS * [Locations].[City].[City].ALLMEMBERS * [Locations].[Name].[Name].ALLMEMBERS * [Date].[Month].[Month].ALLMEMBERS * [Date].[Day].[Day].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM [Tytani] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS
+
+
 
 5. Porównaj oceny uczniów z różnych lokalizacji (stacjonarne i online):
 - Fakt: fact_enrollments
@@ -17,21 +27,50 @@ o date.month, date.year (Czas)
 
  SELECT NON EMPTY { [Measures].[AVG_Rating] } ON COLUMNS, NON EMPTY { ([Courses].[Is Online].[Is Online].ALLMEMBERS * [Date].[Month].[Month].ALLMEMBERS * [Date].[Year].[Year].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM [Tytani] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS
  
+
+
 6. Średnia ocena nauczycieli w danej specjalizacji w danym roku
  SELECT NON EMPTY { [Measures].[AVG_Rating] } ON COLUMNS, NON EMPTY { ([Teachers].[Specialization].[Specialization].ALLMEMBERS * [Date].[Year].[Year].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM [Tytani] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS
  
+
+
  8. Oceny dla uczniów z podziałem na typ kursu, rok i miesiąc; WHERE; gdzie typ kursu to "Roczny"
  SELECT NON EMPTY { [Measures].[AVG_Grade] } ON COLUMNS, NON EMPTY { ([Date].[Year].[Year].ALLMEMBERS * [Date].[Month].[Month].ALLMEMBERS * [Courses].[Course Type].[Course Type].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( { [Courses].[Course Type].&[Roczny] } ) ON COLUMNS FROM [Tytani]) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS
 
  Stare:
   SELECT NON EMPTY { [Measures].[AVG_Grade] } ON COLUMNS, NON EMPTY { ([Courses].[Course Type].[Course Type].ALLMEMBERS * [Date].[Month].[Month].ALLMEMBERS * [Date].[Year].[Year].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM [Tytani] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS
   
-9. Jakie oceny wystawiają uczniowie
+
+
+9. Jakie oceny wystawiają uczniowie; TOPCOUNT
+
+SELECT 
+  NON EMPTY { [Measures].[AVG_Rating] } ON COLUMNS, 
+  NON EMPTY 
+    TOPCOUNT(
+      { 
+        [Students].[Id].[Id].ALLMEMBERS 
+        * [Students].[First Name].[First Name].ALLMEMBERS 
+        * [Students].[Last Name].[Last Name].ALLMEMBERS 
+      }, 
+      10, 
+      [Measures].[AVG_Rating]
+    ) 
+    DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME 
+ON ROWS 
+FROM [Tytani] 
+CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS
+
+
+
+
+
+Stare
   SELECT NON EMPTY { [Measures].[AVG_Rating] } ON COLUMNS, NON EMPTY { ([Students].[Id].[Id].ALLMEMBERS * [Students].[First Name].[First Name].ALLMEMBERS * [Students].[Last Name].[Last Name].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM [Tytani] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS
 
 
 
-  10. 
+  10. Zwiększona cena kursu o 20%
 WITH MEMBER [Measures].[IncreasedPrice] AS
     [Measures].[Price] * 1.2
 
@@ -52,3 +91,25 @@ CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, F
 
   Stare
    SELECT NON EMPTY { [Measures].[Price] } ON COLUMNS, NON EMPTY { ([Courses].[Name].[Name].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( { [Courses].[Course Type].&[Roczny] } ) ON COLUMNS FROM [Tytani]) WHERE ( [Courses].[Course Type].&[Roczny] ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS
+
+
+
+Dodatkowe:
+
+1. Tematy ich średnie oceny przez uczniów 
+
+ SELECT NON EMPTY { [Measures].[AVG_Rating] } ON COLUMNS, NON EMPTY { ([Subjects].[Name].[Name].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM [Tytani] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS
+
+
+Stare
+ SELECT NON EMPTY { [Measures].[AVG_Rating] } ON COLUMNS, NON EMPTY { ([Subjects].[Name].[Name].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( { [Courses].[Course Type].&[Roczny] } ) ON COLUMNS FROM [Tytani]) WHERE ( [Courses].[Course Type].&[Roczny] ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS
+
+
+
+ 2. Oceny uczniów lekcji danego nauczyciela
+
+ SELECT NON EMPTY { [Measures].[AVG_Rating] } ON COLUMNS, NON EMPTY { ([Teachers].[Id].[Id].ALLMEMBERS * [Teachers].[Last Name].[Last Name].ALLMEMBERS * [Teachers].[First Name].[First Name].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM [Tytani] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS
+
+
+ Stare:
+  SELECT NON EMPTY { [Measures].[AVG_Rating] } ON COLUMNS, NON EMPTY { ([Teachers].[First Name].[First Name].ALLMEMBERS * [Teachers].[Last Name].[Last Name].ALLMEMBERS * [Teachers].[Id].[Id].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( { [Courses].[Course Type].&[Roczny] } ) ON COLUMNS FROM [Tytani]) WHERE ( [Courses].[Course Type].&[Roczny] ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS

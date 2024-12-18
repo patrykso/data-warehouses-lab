@@ -54,7 +54,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>Nps6FHGdVfsd0vHDP6VifTaBKdQ=25.11.2024 22:56:4825.11.2024 22:31:00</TimeStamp>
+        <TimeStamp>U51l3YcSeCYYDCn0EaDgRw36+7U=17.12.2024 14:55:5825.11.2024 22:31:00</TimeStamp>
         <ID>
           <String>Date</String>
         </ID>
@@ -96,7 +96,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>HiNKBu2lZ5hzeSd+4cU27UgnwBk=26.11.2024 02:07:5625.11.2024 22:31:003I20aBrDK0o+Ryum6c5HDwopqcY=26.11.2024 01:11:1225.11.2024 22:31:00</TimeStamp>
+        <TimeStamp>LOydGcxRH/wHBE9HB/77/Ebnq7o=17.12.2024 15:17:0625.11.2024 22:31:003Gbdvl4Hz84nNFNks4jpPgtVdY8=17.12.2024 15:15:2625.11.2024 22:31:00</TimeStamp>
         <ID>
           <String>Tytani</String>
         </ID>
@@ -113,5 +113,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2024-12-07T19:30:06.826667Z</LastDeployed>
+  <LastDeployed>2024-12-17T14:17:09.29Z</LastDeployed>
 </DeploymentSnapshot>

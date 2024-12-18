@@ -19,7 +19,6 @@ WITH (
     FIRSTROW = 1
 );
 
--- Use a CTE to select distinct rows and clean whitespace
 WITH
     CleanedStaging
     AS
@@ -33,7 +32,6 @@ WITH
         FROM #StagingLocations
     )
 
--- Merge distinct staging data into the target table
 MERGE INTO tytani.[dbo].[locations] AS Target
 USING CleanedStaging AS Source
 ON (
@@ -47,5 +45,4 @@ WHEN NOT MATCHED BY TARGET THEN
     INSERT (name, postal_code, city, street, building_number)
     VALUES (Source.name, Source.postal_code, Source.city, Source.street, Source.building_number);
 
--- Drop the temporary staging table
 DROP TABLE #StagingLocations;

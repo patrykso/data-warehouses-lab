@@ -1,4 +1,4 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8456942b-fee4-4b65-a531-b10b47af7abb" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0ef167c0-67f1-428e-9469-5396999d30ae" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Tytani</ID>
   <Name>Tytani</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="48" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="2442" scrolltop="-3193" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="21548" y="22162" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="48" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2764" scrolltop="-1466" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="85" x="21590" y="21654" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01ee00009001b0300100065461686f6d61" />
             </font>
@@ -391,11 +391,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>2442</Value>
+      <Value>-2764</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-3193</Value>
+      <Value>-1466</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -407,213 +407,218 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
-      <Value>75</Value>
+      <Value>85</Value>
     </Annotation>
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Dimensions>
-    <Dimension dwd:design-time-name="b98e11d3-066e-4243-81e0-19fb9799fe69">
+    <Dimension dwd:design-time-name="73b56bfd-ca19-417d-84da-7d6c272fc68a">
       <ID>Date</ID>
       <Name>Date</Name>
       <DimensionID>Date</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="1d70c12c-fa21-470e-841d-e70ebc57bb5e">
+        <Attribute dwd:design-time-name="a1277299-d40b-47e2-89ed-3cd632d5595a">
           <AttributeID>Id</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="489a7f4a-2355-49d0-a941-aee85a334228">
+        <Attribute dwd:design-time-name="b56614a6-2850-4a60-8dcd-eb5e320c8b9c">
           <AttributeID>Month</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="5f5b40f8-f1ae-4b29-93d6-a79c0dc9bbdd">
+        <Attribute dwd:design-time-name="f8a27a2c-027b-4741-a1ae-b197506af296">
           <AttributeID>Year</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="05f0f896-f2ee-4a57-a733-e3ae55e525a8">
+        <Attribute dwd:design-time-name="d39622a2-c2a4-4ccb-b9e8-273a4f85e5f8">
           <AttributeID>Day</AttributeID>
         </Attribute>
       </Attributes>
-    </Dimension>
-    <Dimension dwd:design-time-name="1f6afde2-9e23-41ed-80e7-99bb6bb380b8">
-      <ID>Junk</ID>
-      <Name>Junk</Name>
-      <DimensionID>Junk</DimensionID>
-      <Attributes>
-        <Attribute dwd:design-time-name="2df2d88f-d852-4931-ae68-ae42de33237b">
-          <AttributeID>Id</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="66e8b571-6fa5-4a73-9795-cd0ed123c13f">
-          <AttributeID>Status</AttributeID>
-        </Attribute>
-      </Attributes>
-    </Dimension>
-    <Dimension dwd:design-time-name="57dc5bc7-3d66-4693-a5b5-e13236a286b6">
-      <ID>Students</ID>
-      <Name>Students</Name>
-      <DimensionID>Students</DimensionID>
-      <Attributes>
-        <Attribute dwd:design-time-name="f804c71a-fb17-41f5-9165-458ccad04e23">
-          <AttributeID>Id</AttributeID>
-          <AggregationUsage>Full</AggregationUsage>
-        </Attribute>
-        <Attribute dwd:design-time-name="c567a21f-8308-4e4e-967d-6bad0423c31d">
-          <AttributeID>First Name</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="d1f94362-d905-4a76-a8fc-dc1111a9dc0a">
-          <AttributeID>Last Name</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="b22cfb92-3fd0-4fad-8f56-cada804c87f2">
-          <AttributeID>Email</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="6141f35b-ce2a-4f9f-8440-6e30c9096e70">
-          <AttributeID>Phone Number</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="2796cd80-6b2e-439a-b0ad-1a1587874975">
-          <AttributeID>City</AttributeID>
-        </Attribute>
-      </Attributes>
-    </Dimension>
-    <Dimension dwd:design-time-name="d0bc8dba-4933-41c5-828c-21aa03d49097">
-      <ID>Courses</ID>
-      <Name>Courses</Name>
-      <DimensionID>Courses</DimensionID>
-      <Attributes>
-        <Attribute dwd:design-time-name="6d785e36-ec88-4d39-9199-41b38d203a42">
-          <AttributeID>Id</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="0a9e6ef0-b4f1-431b-bffd-20213dc50a34">
-          <AttributeID>Name</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="b7d79c30-861b-4564-a907-a08aa3b598dd">
-          <AttributeID>Description</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="3d996e95-bcff-43a4-984c-6554f7999be3">
-          <AttributeID>Course Type</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="8b8f1306-19e8-4f05-b167-e04c343e9364">
-          <AttributeID>Is Online</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="90920209-7198-4d49-8dfb-aed9c8d16cbf">
-          <AttributeID>Max Students Category</AttributeID>
-        </Attribute>
-      </Attributes>
-    </Dimension>
-    <Dimension dwd:design-time-name="883a61c7-136a-4978-8118-1491ed750794">
-      <ID>Final Surveys Scd1</ID>
-      <Name>Final Surveys Scd1</Name>
-      <DimensionID>Final Surveys Scd1</DimensionID>
-      <Attributes>
-        <Attribute dwd:design-time-name="7860e54c-167d-40f8-b37d-5cec61a3be67">
-          <AttributeID>Id</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="a512d6ba-50ff-4e70-aff1-23dd106979f9">
-          <AttributeID>Course Interest Rating</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="93ca435f-ab02-455f-aed4-6775f4f625ff">
-          <AttributeID>Teacher Engagement Rating</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="a99b55b4-9699-47ba-a0d1-bbc624943f0c">
-          <AttributeID>Positive Comments</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="8a40d5a2-08e7-4f88-8918-1bca4006b659">
-          <AttributeID>Negative Comments</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="9d58ac9a-1958-4f1b-a881-e539aa5601ff">
-          <AttributeID>Continue Course</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="2a108121-1846-4816-bf97-581706b004ae">
-          <AttributeID>Filled</AttributeID>
-        </Attribute>
-      </Attributes>
-    </Dimension>
-    <Dimension dwd:design-time-name="f6a951c5-e4dd-45d9-abe2-0efc5d69882c">
-      <ID>Locations</ID>
-      <Name>Locations</Name>
-      <DimensionID>Locations</DimensionID>
-      <Attributes>
-        <Attribute dwd:design-time-name="1364cb82-7b6f-4ff9-b89a-e00b3667452b">
-          <AttributeID>Id</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="4b7ab5be-d320-4825-8ea4-38df241f7cad">
-          <AttributeID>Name</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="cf249766-3d26-4700-b9fc-44daeadb5d0f">
-          <AttributeID>Postal Code</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="b4ef93cf-0d37-485f-9384-d637f9feec4d">
-          <AttributeID>City</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="801b4aff-3d09-4f83-ad9e-819dcfeb404a">
-          <AttributeID>Street</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="513c4b77-9c48-45a0-841f-88080574d75d">
-          <AttributeID>Building Number</AttributeID>
-        </Attribute>
-      </Attributes>
-    </Dimension>
-    <Dimension dwd:design-time-name="226c6c6a-131a-4e31-90a7-e9a7eceb5888">
-      <ID>Time</ID>
-      <Name>Time</Name>
-      <DimensionID>Time</DimensionID>
-      <Attributes>
-        <Attribute dwd:design-time-name="d779dec3-b789-4e36-a297-67aa705add5e">
-          <AttributeID>Id</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="e9511798-aeea-452e-ae83-41ad0a0d9d71">
-          <AttributeID>Hour</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="dc81d7c1-1697-4ff7-aa2a-e8fe24bf4bc8">
-          <AttributeID>Minute</AttributeID>
-        </Attribute>
-      </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="ff0effbe-d2c2-49e3-b34b-69f44e3ef3ed">
+        <Hierarchy dwd:design-time-name="20f74611-4375-422c-80e8-b86b4a5b8eff">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="ae2a32e9-a13b-402b-a899-3723aa767cb9">
+    <Dimension dwd:design-time-name="7f355b21-2a8f-401d-9a4e-24269278dd63">
+      <ID>Junk</ID>
+      <Name>Junk</Name>
+      <DimensionID>Junk</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d34242af-9324-4fc4-ae81-49a21cab0d8c">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4e438a0e-d86b-4e9f-9086-30be323f0dcc">
+          <AttributeID>Status</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="cb2c3783-9759-4431-999d-37914c818edf">
+      <ID>Students</ID>
+      <Name>Students</Name>
+      <DimensionID>Students</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4b60776e-8ba0-4e61-a0f3-bcf587bb95cb">
+          <AttributeID>Id</AttributeID>
+          <AggregationUsage>Full</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="b66797c2-7991-44f7-ae07-c0a63ce06fc7">
+          <AttributeID>First Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e4750ce3-96ad-430a-8454-81f5ae2504de">
+          <AttributeID>Last Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="83b1f755-c785-4617-910e-140ed07cba01">
+          <AttributeID>Email</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="26242452-fac9-4a40-b938-1025e425a65b">
+          <AttributeID>Phone Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e9b325fa-d1b6-4629-8f49-90747e1a1f7c">
+          <AttributeID>City</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="6b5eccab-7cbd-4c48-b523-398caea5d84a">
+      <ID>Courses</ID>
+      <Name>Courses</Name>
+      <DimensionID>Courses</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6abdcd0a-f4fa-4991-b060-8a7af8f42ff6">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e6c3d512-7f80-40d2-a0a8-61d59c0cbff8">
+          <AttributeID>Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a37ed070-6bc1-4bd0-b6fd-7d32fda2c2b7">
+          <AttributeID>Description</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="97c2587d-97ec-4eff-9c24-3594c2c96a88">
+          <AttributeID>Course Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="20706f7c-5e40-4124-9581-60b16592e435">
+          <AttributeID>Is Online</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f6abac52-a562-42c9-a9d9-198465a8209b">
+          <AttributeID>Max Students Category</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="d61a0bc6-6cca-4692-aed8-e0251dc0c221">
+      <ID>Final Surveys Scd1</ID>
+      <Name>Final Surveys Scd1</Name>
+      <DimensionID>Final Surveys Scd1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0c0fadd7-d999-46ab-a9c9-5f49cb96c383">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e38af89e-cf56-4113-a9ce-1ab55c89b66a">
+          <AttributeID>Course Interest Rating</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6560dfbc-594c-444a-8ecb-98281dcc659c">
+          <AttributeID>Teacher Engagement Rating</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="05ec00bd-944f-49c6-ac7a-f911aad7eb8f">
+          <AttributeID>Positive Comments</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3ed573fd-a0c3-437e-b3cb-3be4739413ea">
+          <AttributeID>Negative Comments</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="98623ba2-faa7-4704-82b6-1380eed6c4dc">
+          <AttributeID>Continue Course</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8fb68105-9f21-4917-929b-df24bdaa951b">
+          <AttributeID>Filled</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="19dd5e49-9540-4368-80e1-2e870639de21">
+      <ID>Locations</ID>
+      <Name>Locations</Name>
+      <DimensionID>Locations</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="064fa0ac-62e6-45fc-af5e-0a002a30e218">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="38e2c915-a82e-4a78-93ef-1cfef9950b08">
+          <AttributeID>Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d6ab4d43-83c5-41d8-b77e-719b2ac08a14">
+          <AttributeID>Postal Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bda983cf-bb4c-41ca-8903-49f5db2c7afb">
+          <AttributeID>City</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f0dde282-055d-47a9-a90e-8f733e7170d0">
+          <AttributeID>Street</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4425f3c9-8c1e-4d93-99e1-bc3bd0c4dea3">
+          <AttributeID>Building Number</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="4880d022-b987-44d6-8c4d-a676640d5a36">
+      <ID>Time</ID>
+      <Name>Time</Name>
+      <DimensionID>Time</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="850c6dc6-de23-4c38-b020-76f9345026d8">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="867332f1-16bd-4175-8e23-57fcd12934da">
+          <AttributeID>Hour</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1a2b273e-aef4-4818-ba12-f62384ba2410">
+          <AttributeID>Minute</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="49b10a00-4071-4471-83ac-38ada18e7ff3">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="6b795740-9d65-44e6-814d-d4e842b52bcf">
       <ID>Subjects</ID>
       <Name>Subjects</Name>
       <DimensionID>Subjects</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="efffcd6e-8038-43b2-a83f-bd41391a6993">
+        <Attribute dwd:design-time-name="f2b31c45-8c33-42ba-801c-a6f5c5c9ba62">
           <AttributeID>Id</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="3afcc8e3-ae64-4a79-8010-7a26123590b3">
+        <Attribute dwd:design-time-name="2478b5fa-557a-443d-bb16-3f1e9c340788">
           <AttributeID>Name</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="b73f5ab0-e05b-42db-bf05-4b65bb037004">
+        <Attribute dwd:design-time-name="b7dae424-9a4a-473f-b1da-edd2fc82596e">
           <AttributeID>Description</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="c2684a74-e9b9-4770-be54-12000c2030c1">
+    <Dimension dwd:design-time-name="673a26b8-4e1a-45d8-bace-20a209e4546b">
       <ID>Teachers</ID>
       <Name>Teachers</Name>
       <DimensionID>Teachers</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="4eca0bd0-9fca-414d-ac9c-1fa6c0f6168b">
+        <Attribute dwd:design-time-name="7a7a9238-91d6-48e7-a665-4ce81c7a0e37">
           <AttributeID>Id</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="7f86770f-d370-4c52-90f2-1daf9f128e58">
+        <Attribute dwd:design-time-name="2f2b3c6d-c7f1-491d-b699-bbeef39e0d27">
           <AttributeID>First Name</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="2255fa16-ec7f-4b21-a37d-02a515562267">
+        <Attribute dwd:design-time-name="1ac65854-f4c5-4900-8c30-c56f3d0adf00">
           <AttributeID>Last Name</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ae89fb06-1f1a-4872-8454-fea89b1425f9">
+        <Attribute dwd:design-time-name="30bf8812-f1e8-4d2a-8bb8-c478ee1c5462">
           <AttributeID>Email</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="c64c45dc-bfa5-479f-8271-9a26522b45f6">
+        <Attribute dwd:design-time-name="13dea771-1911-4c0e-baa0-add771ea9a4d">
           <AttributeID>Phone Number</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="1b1b5fb4-58df-461b-bb41-1a551e97e7c4">
+        <Attribute dwd:design-time-name="864423b4-1005-4f24-899f-8f1f51110f63">
           <AttributeID>Specialization</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
   </Dimensions>
   <MeasureGroups>
-    <MeasureGroup dwd:design-time-name="d557d648-5b47-4acd-89b6-6a27ecadfddb">
+    <MeasureGroup dwd:design-time-name="57ca03a7-4722-4002-8f1e-9b9fdc7be839">
       <ID>Fact Enrollments</ID>
       <Name>Fact Enrollments</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -621,49 +626,84 @@
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Measures>
-        <Measure dwd:design-time-name="d4c09721-960b-4330-bf03-b442c20e183f">
+        <Measure dwd:design-time-name="cb9ccdff-8af1-428c-b804-ccb8e67e084f">
           <ID>Price</ID>
           <Name>Price</Name>
-          <AggregateFunction>Max</AggregateFunction>
-          <Source dwd:design-time-name="4d7f378c-5b2d-48bd-a0a6-a76ecaaef8b3">
+          <Source dwd:design-time-name="3591f636-a77b-4cae-b6ab-7c28320196de">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="c6f7daf0-1927-494c-90d7-2e6a0478552a">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a87684bd-f966-4a3f-8eda-f96544005318">
               <TableID>dbo_fact_enrollments</TableID>
               <ColumnID>price</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="a6ba6ca5-2add-4df0-8a6e-9dddc146ebdb">
+        <Measure dwd:design-time-name="110d6006-0227-4b71-845c-d5d99f2ff5d4">
           <ID>Duration</ID>
           <Name>Duration</Name>
-          <Source dwd:design-time-name="c62dbcd2-379b-4e7c-9aff-bf09da4269d1">
+          <Source dwd:design-time-name="3c26ccbf-0cbc-4fb3-88cd-42d43ab35f0e">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="0b5bf297-d709-43f7-92e3-6b88f32fbf9d">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="04dbd4e4-7b29-4f00-8f3c-2f592cba17f7">
               <TableID>dbo_fact_enrollments</TableID>
               <ColumnID>duration</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="5c65a40a-e0af-4c62-90bd-38acae8b8b5a">
+        <Measure dwd:design-time-name="a677ae9f-42f3-435c-aacf-798b57e2a0cf">
           <ID>Grade</ID>
           <Name>Grade</Name>
-          <Source dwd:design-time-name="dc84afa0-5dca-4193-9228-7af00c423628">
+          <Source dwd:design-time-name="5e757f6a-b31b-47db-b02f-6337c1fca6b8">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="5f38f0da-6ae3-4199-add1-58caf3a44025">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7c303259-fa2e-4ab3-a022-7a0967c4346d">
               <TableID>dbo_fact_enrollments</TableID>
               <ColumnID>grade</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="683e989f-305e-4ffb-9c40-4ef79d6d1de6">
+        <Measure dwd:design-time-name="65603654-971d-4cd1-9977-a793c6a85abf">
           <ID>Fact Enrollments Count</ID>
           <Name>Fact Enrollments Count</Name>
           <AggregateFunction>Count</AggregateFunction>
-          <Source dwd:design-time-name="6cdafa18-77c2-4284-9cd6-a709ef35612c">
+          <Source dwd:design-time-name="d316ffd6-d999-4ef3-9b16-cf70ce46f23a">
             <DataType>Integer</DataType>
             <DataSize>4</DataSize>
-            <Source xsi:type="RowBinding" dwd:design-time-name="ee2a090e-000b-460c-b73f-e7ff4f32393e">
+            <Source xsi:type="RowBinding" dwd:design-time-name="6291c3a8-5a6a-4d74-a2a5-6eb21173e9ee">
               <TableID>dbo_fact_enrollments</TableID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ccc72c69-cd94-4c1f-8c6d-dea3d7e309a0">
+          <ID>Fact Enrollments Count 1</ID>
+          <Name>Student ID Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="ddb99a62-f8b5-467f-9eaf-a4fd7c0fdf01">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="48ea3fb5-6d12-4aff-83fe-7ac731831310">
+              <TableID>dbo_fact_enrollments</TableID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="27adb08a-8c28-4360-b125-8a786e0efe5f">
+          <ID>Grade Count</ID>
+          <Name>Grade Count 1</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="cd4ce8b2-dd76-47ed-95aa-0205005e49fd">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c0389598-4675-4232-93ea-124f3454992c">
+              <TableID>dbo_fact_enrollments</TableID>
+              <ColumnID>grade</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="bcdd8e9f-edde-4322-b4aa-c423e02e0bb9">
+          <ID>Grade - Fact Enrollments</ID>
+          <Name>Grade Sum</Name>
+          <Source dwd:design-time-name="4e121e06-64c9-4241-9444-dd19f58fb2ba">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="eacb310b-82c5-4ef1-9d6b-07b0d1c9d011">
+              <TableID>dbo_fact_enrollments</TableID>
+              <ColumnID>grade</ColumnID>
             </Source>
           </Source>
         </Measure>
@@ -671,16 +711,16 @@
       <StorageMode>Molap</StorageMode>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f677effa-692c-451e-825d-703a59cd7887">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="161de720-12cd-4eb7-8a6d-b19d9c910465">
           <CubeDimensionID>Students</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="64e9f0e8-24b0-487b-9b26-8d438d9bf800">
+            <Attribute dwd:design-time-name="08db5228-82a2-4160-ac44-cd7a51270a93">
               <AttributeID>Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="4b3f56a2-416a-4e6b-8935-b6131b282199">
+                <KeyColumn dwd:design-time-name="eb7aa2fd-3815-4ce7-8387-f3c48d3838b3">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3bc84e53-28a1-4477-928b-21b783ce2239">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6b86286c-5414-4e39-b4f2-1178b97cfbd7">
                     <TableID>dbo_fact_enrollments</TableID>
                     <ColumnID>student_id</ColumnID>
                   </Source>
@@ -690,16 +730,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e6dfdfa7-e46c-4988-8857-b0973559c76f">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="bbeed001-0d99-4c99-9219-f4e9b09f62ea">
           <CubeDimensionID>Courses</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="b876765d-b46f-419f-89b2-d4ff3f4c3c6a">
+            <Attribute dwd:design-time-name="b2a2ef93-47c4-4541-8823-c5fa63bb7ce0">
               <AttributeID>Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="07fd2a78-1819-42c8-a018-0a7a6669240f">
+                <KeyColumn dwd:design-time-name="4e2c37be-530e-4d4b-9907-9ba2470eb48a">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="eb779ad6-acef-46d5-a799-35f9e80acef2">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="78602708-c3ff-41c6-8970-1bfb8e4d5f5a">
                     <TableID>dbo_fact_enrollments</TableID>
                     <ColumnID>course_id</ColumnID>
                   </Source>
@@ -709,16 +749,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9de5b559-5fd4-4572-b254-f4b237ea24bf">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="714bb68e-aa4d-4be8-908a-ea291d7107fa">
           <CubeDimensionID>Final Surveys Scd1</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="020b5be3-47fb-4a11-9a85-ff13c31892a8">
+            <Attribute dwd:design-time-name="a37810fc-d1d0-486f-b936-159069b6f870">
               <AttributeID>Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="b7492ac2-5edf-4133-875f-81b37c55d8ae">
+                <KeyColumn dwd:design-time-name="d802e7fa-6389-4b69-84c3-f957b1391fd7">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9a0b2e71-963c-493e-9498-9e5f29f9ae3f">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="454e4d33-f670-4086-8106-49469d5299aa">
                     <TableID>dbo_fact_enrollments</TableID>
                     <ColumnID>final_survey_id</ColumnID>
                   </Source>
@@ -728,16 +768,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8159c1ef-dd2e-422a-badd-e78e2fe7b0ed">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7d502bca-359b-49be-95c4-0791df0b0247">
           <CubeDimensionID>Date</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="0590f461-d623-44cc-9a34-24df96a0baae">
+            <Attribute dwd:design-time-name="cf056b1d-925c-4140-91ca-025aa58a6c78">
               <AttributeID>Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="9368960a-84a9-4c14-9fcc-ada876c9fad6">
+                <KeyColumn dwd:design-time-name="32185d35-710a-4c1f-8e43-74b0fbd9097a">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9cdd6961-c486-41f4-8b78-2b759e6f5c4f">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="678d5ca0-db84-479f-9708-edb679c1bf7d">
                     <TableID>dbo_fact_enrollments</TableID>
                     <ColumnID>date_id</ColumnID>
                   </Source>
@@ -750,7 +790,7 @@
       </Dimensions>
       <Partitions />
     </MeasureGroup>
-    <MeasureGroup dwd:design-time-name="d6284d35-0fbb-4a36-8570-98052868301e">
+    <MeasureGroup dwd:design-time-name="8b222e11-de12-4e13-9706-3c6577f0f385">
       <ID>Fact Attendance</ID>
       <Name>Fact Attendance</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -758,27 +798,39 @@
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Measures>
-        <Measure dwd:design-time-name="4469313f-97be-4641-867c-6768221a974f">
+        <Measure dwd:design-time-name="933e1bf9-b78e-4d90-8a9c-ca4c09a1c8e6">
           <ID>Rating</ID>
-          <Name>Rating</Name>
-          <AggregateFunction>Min</AggregateFunction>
-          <Source dwd:design-time-name="fd64e65a-1ba1-44bc-8b7b-0e8681e92ec3">
+          <Name>Rating Sum</Name>
+          <Source dwd:design-time-name="e7e7a850-c02d-4de8-9b0e-692ac103fae7">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="24026971-ed88-4c80-b666-e154922604b7">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="84091f57-1979-44b7-b90b-2f12d9318cdf">
               <TableID>dbo_fact_attendance</TableID>
               <ColumnID>rating</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="95bf0be3-539b-4043-823d-004767c87d42">
+        <Measure dwd:design-time-name="c8988a5c-f9a4-4385-9f43-b38f9b3b7bab">
           <ID>Fact Attendance Count</ID>
           <Name>Fact Attendance Count</Name>
           <AggregateFunction>Count</AggregateFunction>
-          <Source dwd:design-time-name="aed6d54e-c0e1-4142-a038-75fa702cceff">
+          <Source dwd:design-time-name="d2adcd3c-37f4-409f-8d78-b14dba4965f7">
             <DataType>Integer</DataType>
             <DataSize>4</DataSize>
-            <Source xsi:type="RowBinding" dwd:design-time-name="5734f99c-4f92-484a-98b2-cc2c19e5c1ff">
+            <Source xsi:type="RowBinding" dwd:design-time-name="956a980d-6a05-4cee-8650-591cf0a51ffa">
               <TableID>dbo_fact_attendance</TableID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="2929fc0c-5c17-4c49-b248-8a2cb8119d4c">
+          <ID>Rating Count</ID>
+          <Name>Rating Count 1</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="41c57f44-0ad7-4184-96ed-57352392d442">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="052ed231-99e2-4a17-882b-78787237d0a2">
+              <TableID>dbo_fact_attendance</TableID>
+              <ColumnID>rating</ColumnID>
             </Source>
           </Source>
         </Measure>
@@ -786,16 +838,16 @@
       <StorageMode>Molap</StorageMode>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="318a78df-88b5-46ac-b678-c42fa16da2b5">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="eb65bf95-cb77-40e8-8d67-ce64eb7c0e9c">
           <CubeDimensionID>Locations</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="2bc98f39-6020-4233-b19c-eb8005b727a9">
+            <Attribute dwd:design-time-name="6849e3e8-596f-4c08-8a69-35dfe9845dbf">
               <AttributeID>Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="72772f2b-350a-47b0-b3e0-fb1ede3b00fb">
+                <KeyColumn dwd:design-time-name="9b670df8-7f54-4bf4-858b-13f01b930ad2">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="79d5d752-d09d-45f4-a8ba-1a69484f3e7e">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4bbe9bde-16f8-414b-a841-48807a527734">
                     <TableID>dbo_fact_attendance</TableID>
                     <ColumnID>location_id</ColumnID>
                   </Source>
@@ -805,16 +857,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4d3b4503-bcd2-4f66-bbd4-a759f8bba663">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d799e251-1e7c-4b57-b9a6-739978bfb282">
           <CubeDimensionID>Students</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="199d3ee7-5f0f-426c-bd6c-62af041ee7e6">
+            <Attribute dwd:design-time-name="57486fc4-ea44-468b-8d18-90be7fa2ae21">
               <AttributeID>Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="7a0b348b-ea9f-4ddf-be29-ccf4f24ddb0e">
+                <KeyColumn dwd:design-time-name="e1507f0f-a30d-4065-86c4-c5d112447aea">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d39692ff-7bf4-4402-9e51-25d447bb22e1">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ba6b957e-5e73-4f09-9919-03161f32cee6">
                     <TableID>dbo_fact_attendance</TableID>
                     <ColumnID>student_id</ColumnID>
                   </Source>
@@ -824,16 +876,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4fc73a86-5d5b-40a2-a212-94910b1dbefd">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="05aae4b1-272f-42f4-878b-2ebe2598a08e">
           <CubeDimensionID>Time</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="8cb791b8-037f-4f98-8502-67530258d031">
+            <Attribute dwd:design-time-name="618155a9-2871-4f28-84a6-fdc4fd104b9a">
               <AttributeID>Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="ccaeb5d7-5d5a-40b1-9b3a-b03663337480">
+                <KeyColumn dwd:design-time-name="0c722215-a4f0-4c7b-afd9-ccf61e517c04">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a1bb88c8-8894-4f09-becb-a0810300915f">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="38be7ecd-4c7d-4545-968a-110a424868a2">
                     <TableID>dbo_fact_attendance</TableID>
                     <ColumnID>start_time_id</ColumnID>
                   </Source>
@@ -843,16 +895,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1bee44c4-c45b-4396-b264-ff4aca5eab7d">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="cd53b580-ce93-4e67-85b1-a02014316123">
           <CubeDimensionID>Junk</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="7420ddc1-5f92-411c-b718-9f82dd827698">
+            <Attribute dwd:design-time-name="940b0535-a7bb-471a-ba06-28db8604c06a">
               <AttributeID>Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="e67c4c21-d805-4824-b5e3-f4324d7618cd">
+                <KeyColumn dwd:design-time-name="a0bb233e-f130-40de-a3b3-ed37a81b9912">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="15aaccf6-fc06-44b7-8984-ed79cfd1ca72">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="61a1e7df-46a2-4202-9eba-6ec9838e4181">
                     <TableID>dbo_fact_attendance</TableID>
                     <ColumnID>junk_id</ColumnID>
                   </Source>
@@ -862,16 +914,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="10574ffe-1489-4e3f-ae66-6332bb5e5fac">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7e9164b0-36b0-4a13-86bf-37116c4c8b48">
           <CubeDimensionID>Subjects</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="7d5641d5-0abf-4515-b800-8526b36a93f3">
+            <Attribute dwd:design-time-name="8ab5ed98-7251-4789-bb8f-f41f2fc9242f">
               <AttributeID>Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="1aa9408d-0911-4152-83ac-21cb9dbdcbf2">
+                <KeyColumn dwd:design-time-name="6608be9a-5287-4d35-85db-ec1ddb63d596">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a8508caf-cab1-4b13-9d69-4deb29eb3da8">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="babef038-3f58-499f-a60f-1e03885dac74">
                     <TableID>dbo_fact_attendance</TableID>
                     <ColumnID>subject_id</ColumnID>
                   </Source>
@@ -881,16 +933,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f075d2da-946c-4d2f-b0cf-dc714788bf75">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b92c4043-0908-48b0-acc7-aa58576bec49">
           <CubeDimensionID>Courses</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="33b874d3-2539-4800-917c-4c3f0b57a685">
+            <Attribute dwd:design-time-name="7fcff380-b9e8-4376-ac00-d70d87b6472d">
               <AttributeID>Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="686a6f2a-a4b1-4b13-a1da-498af662df33">
+                <KeyColumn dwd:design-time-name="ad6bef26-16e8-4bd3-9349-0b6f7267fbe4">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="811c7aff-a88c-4b40-9a89-569c13767528">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e3f2305f-aa3f-466c-b766-915bedba0235">
                     <TableID>dbo_fact_attendance</TableID>
                     <ColumnID>course_id</ColumnID>
                   </Source>
@@ -900,16 +952,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a83564bb-8082-441f-9538-af2a850140a4">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d96e03a3-8153-4572-85ca-1f23bcbc6899">
           <CubeDimensionID>Date</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="015b2717-08b2-4dac-9aca-7ccc994c9d26">
+            <Attribute dwd:design-time-name="b2b69ac7-ad28-4f80-9a84-7fce3c3b637a">
               <AttributeID>Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="4beaaa20-0bc6-4db0-a0b3-ce799cdc28db">
+                <KeyColumn dwd:design-time-name="9ea2f5a2-6cac-4e14-a1df-4f46a4266632">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="76dcdf81-51dc-49ac-bbd7-a14498b59fba">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="aab9680c-a155-462e-a9e5-5b13738bbdad">
                     <TableID>dbo_fact_attendance</TableID>
                     <ColumnID>date_id</ColumnID>
                   </Source>
@@ -919,16 +971,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c2fb6d84-fd98-4d15-8b9a-e1532036090d">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="37e6f4a7-e436-43ce-8467-d1186911df54">
           <CubeDimensionID>Teachers</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="9638ced3-df29-4143-a2fd-254f69ddc371">
+            <Attribute dwd:design-time-name="d4509e56-7ed2-4c09-bd33-3adb95488d76">
               <AttributeID>Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="90299a5d-c555-45c6-892c-90e4d3929029">
+                <KeyColumn dwd:design-time-name="1d59a701-10e3-4e49-8f76-5d7807d40171">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9a0a279d-4424-4907-90eb-1aa14de1cf86">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f9457bd2-913b-4705-ba4a-2298d879b59c">
                     <TableID>dbo_fact_attendance</TableID>
                     <ColumnID>teacher_id</ColumnID>
                   </Source>
@@ -941,33 +993,170 @@
       </Dimensions>
       <Partitions />
     </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="437b3aa8-2d47-4700-b8a9-29f6f3854357">
+      <ID>Fact Enrollments 1</ID>
+      <Name>Fact Enrollments 1</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="a364eaab-2794-4bcf-a090-d0c7c0d9a9ef">
+          <ID>Student Id Distinct Count</ID>
+          <Name>Student ID Count Distinct</Name>
+          <AggregateFunction>DistinctCount</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="8b508d8c-1b35-4c4a-ac91-a4ca32999db8">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cc67a609-b680-4e69-a01a-0623cfa31821">
+              <TableID>dbo_fact_enrollments</TableID>
+              <ColumnID>student_id</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="29903daa-83a2-4957-9daf-df8e820f9618">
+          <CubeDimensionID>Students</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="43c0e1e8-80a3-4ff9-ae44-7058966c0eb1">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="71bfbfe7-1bb8-49c3-a33a-7511c9ff57c1">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="78763039-1cc6-4c3e-a853-304ecefff71d">
+                    <TableID>dbo_fact_enrollments</TableID>
+                    <ColumnID>student_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c6ed4299-4d52-43d3-9497-e743395b2f83">
+          <CubeDimensionID>Courses</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="26fda50f-df8a-4fc0-8a2c-7ebd8fa89118">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7efa941c-a196-4774-8220-409eb8aba8e0">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ff585d26-700d-403c-b3c3-4e14e05d694c">
+                    <TableID>dbo_fact_enrollments</TableID>
+                    <ColumnID>course_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fcd86bac-148d-4eb2-8c15-843ca3833c3e">
+          <CubeDimensionID>Final Surveys Scd1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="929c3f6e-3bb1-4053-a74d-6dfcb8ff3dbe">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d521fd27-60b5-4267-a079-bf95c1262c8b">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="753c07ef-9ebc-43f1-a26a-ed93162c3377">
+                    <TableID>dbo_fact_enrollments</TableID>
+                    <ColumnID>final_survey_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="08097da1-9c41-4897-8fc0-03dc2940a003">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e7f870f9-ea73-4275-8d1c-16d1bca4b74c">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d7d22c60-be6d-445e-a8b2-a955b4d4a6ff">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="83131acd-7dd0-44db-9a72-b7bb89944fff">
+                    <TableID>dbo_fact_enrollments</TableID>
+                    <ColumnID>date_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
   </MeasureGroups>
-  <Source dwd:design-time-name="7d593849-9567-4ba8-992c-51634506b83d">
+  <Source dwd:design-time-name="4c5e0ddd-bc13-4dea-b71e-a59724000850">
     <DataSourceViewID>Tytani</DataSourceViewID>
   </Source>
   <MdxScripts>
-    <MdxScript dwd:design-time-name="433f1eea-850b-4934-ae1a-ce7d43f2d67d">
+    <MdxScript dwd:design-time-name="aa8ed4f3-2101-4182-b7c1-d16373101a0d">
       <ID>MdxScript</ID>
       <Name>MdxScript</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
       <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
       <Commands>
         <Command>
-          <Text>CALCULATE; 
+          <Text>CALCULATE;   
 CREATE MEMBER CURRENTCUBE.[Measures].Frekwencja
  AS [Measures].[Fact Attendance Count], 
-VISIBLE = 1  ; 
+VISIBLE = 1;   
 CREATE MEMBER CURRENTCUBE.[Measures].AVG_Rating
- AS AVG([Measures].[Rating]), 
-VISIBLE = 1  ; 
+ AS [Measures].[Rating Sum]/[Measures].[Rating Count 1], 
+VISIBLE = 1;  
+CREATE MEMBER CURRENTCUBE.[Measures].RetentionRate
+ AS [Measures].[Student ID Count Distinct]/[Measures].[Student ID Count], 
+VISIBLE = 1;   
 CREATE MEMBER CURRENTCUBE.[Measures].AVG_Final_Survey_teacher_engagement
  AS AVG([Final Surveys Scd1].[Teacher Engagement Rating]), 
-VISIBLE = 1  ; 
+VISIBLE = 1;   
 CREATE MEMBER CURRENTCUBE.[Measures].AVG_Grade
- AS AVG([Measures].[Rating]), 
+ AS [Measures].[Grade Sum] / [Measures].[Grade Count 1], 
 VISIBLE = 1  ; </Text>
         </Command>
       </Commands>
     </MdxScript>
   </MdxScripts>
+  <Kpis>
+    <Kpi dwd:design-time-name="5f53f284-f60c-4b64-898b-46e5b3ce318f">
+      <ID>KPI</ID>
+      <Name>AverageLessonRating</Name>
+      <AssociatedMeasureGroupID>Fact Attendance</AssociatedMeasureGroupID>
+      <Value>[Measures].[Grade Sum]/[Measures].[Grade Count]</Value>
+      <Goal>3</Goal>
+      <Status>IIf(KPIVALUE("AverageLessonRating") &gt; KPIGoal("AverageLessonRating"), 1, -1)
+</Status>
+      <Trend></Trend>
+      <TrendGraphic>Standard Arrow</TrendGraphic>
+      <StatusGraphic>Gauge - Ascending</StatusGraphic>
+    </Kpi>
+    <Kpi dwd:design-time-name="ae662838-ac0a-468d-9510-9d4ef1b27a7d">
+      <ID>KPI 1</ID>
+      <Name>RetentionRate</Name>
+      <AssociatedMeasureGroupID>Fact Enrollments</AssociatedMeasureGroupID>
+      <Value>[Measures].[Student ID Count Distinct]/[Measures].[Student ID Count]</Value>
+      <Goal>0.5</Goal>
+      <Status>IIf(KPIVALUE("RetentionRate") &gt; KPIGoal("RetentionRate"), 1, -1)
+
+
+
+
+
+</Status>
+      <TrendGraphic>Standard Arrow</TrendGraphic>
+      <StatusGraphic>Gauge - Ascending</StatusGraphic>
+    </Kpi>
+  </Kpis>
 </Cube>

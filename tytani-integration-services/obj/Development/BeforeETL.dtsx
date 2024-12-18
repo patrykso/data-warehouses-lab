@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/9/2024 10:34:44 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-3NFB90S"
+  DTS:CreatorName="DESKTOP-3NFB90S\igor"
+  DTS:DTSID="{A57ACE50-F015-46AA-8CEA-02A4F71B55F4}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="BeforeETL"
+  DTS:PackageType="5"
+  DTS:VersionBuild="13"
+  DTS:VersionGUID="{44CC4F2F-736A-43D2-A7BB-130E22E9EA30}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-3NFB90S.tytani_db]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{B983C3EF-3FA6-4713-A202-043752986919}"
+      DTS:ObjectName="DESKTOP-3NFB90S.tytani_db">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-3NFB90S;Initial Catalog=tytani_db;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{B983C3EF-3FA6-4713-A202-043752986919}DESKTOP-3NFB90S.tytani_db;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Date - Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{F65975DF-0F00-4F34-95C1-BA3900F9AB7C}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Date - Execute SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{B983C3EF-3FA6-4713-A202-043752986919}"
+          SQLTask:SqlStatementSource="DECLARE @start_date DATE = '2021-08-12';&#xA;DECLARE @end_date DATE = '2024-08-12';&#xA;&#xA;WHILE @start_date &lt;= @end_date&#xA;BEGIN&#xA;    INSERT INTO tytani.[dbo].[date]&#xA;        (year, month, day)&#xA;    VALUES&#xA;        (&#xA;            YEAR(@start_date),&#xA;            MONTH(@start_date),&#xA;            DAY(@start_date)&#xA;    );&#xA;&#xA;    SET @start_date = DATEADD(DAY, 1, @start_date);&#xA;END;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Junk - Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{40a82947-3611-47f6-9132-6a7e5a9fdea9}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Junk - Execute SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{B983C3EF-3FA6-4713-A202-043752986919}"
+          SQLTask:SqlStatementSource="INSERT INTO [tytani].dbo.[junk]&#xA;    (status)&#xA;VALUES&#xA;    ('Obecny'),&#xA;    ('Nieobecny'),&#xA;    ('Usprawiedliwione'),&#xA;    ('Spóźniony')" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Time - Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{50BCD7C4-BEE8-40E1-94C4-F4172DD26334}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Time - Execute SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{B983C3EF-3FA6-4713-A202-043752986919}"
+          SQLTask:SqlStatementSource="-- Generowanie pełnego wymiaru czasu&#xA;WITH&#xA;    Hours&#xA;    AS&#xA;    (&#xA;                    SELECT 0 AS hour&#xA;        UNION ALL&#xA;            SELECT hour + 1&#xA;            FROM Hours&#xA;            WHERE hour &lt; 23&#xA;    ),&#xA;    Minutes&#xA;    AS&#xA;    (&#xA;                    SELECT 0 AS minute&#xA;        UNION ALL&#xA;            SELECT minute + 1&#xA;            FROM Minutes&#xA;            WHERE minute &lt; 59&#xA;    ),&#xA;    TimeHierarchy&#xA;    AS&#xA;    (&#xA;        SELECT&#xA;            h.hour,&#xA;            m.minute,&#xA;            CASE&#xA;                WHEN h.hour BETWEEN 0 AND 5 THEN 'Noc'&#xA;                WHEN h.hour BETWEEN 6 AND 9 THEN 'Rano'&#xA;                WHEN h.hour BETWEEN 10 AND 11 THEN 'Przedpołudnie'&#xA;                WHEN h.hour BETWEEN 12 AND 13 THEN 'Południe'&#xA;                WHEN h.hour BETWEEN 14 AND 15 THEN 'Popołudnie'&#xA;                WHEN h.hour BETWEEN 16 AND 20 THEN 'Wieczór'&#xA;                ELSE 'Noc'&#xA;            END AS time_of_day&#xA;        FROM Hours h&#xA;        CROSS JOIN Minutes m&#xA;    )&#xA;SELECT&#xA;    ROW_NUMBER() OVER (ORDER BY hour, minute) AS id,&#xA;    hour,&#xA;    minute,&#xA;    time_of_day&#xA;INTO #TempTimeHierarchy&#xA;FROM TimeHierarchy&#xA;OPTION&#xA;(MAXRECURSION&#xA;0);&#xA;&#xA;-- Enable IDENTITY_INSERT for the 'time' table&#xA;SET IDENTITY_INSERT tytani.[dbo].[time] ON;&#xA;&#xA;-- Insert the data from the temporary table&#xA;INSERT INTO tytani.[dbo].[time]&#xA;    (id, hour, minute, time_of_day)&#xA;SELECT id, hour, minute, time_of_day&#xA;FROM #TempTimeHierarchy;&#xA;&#xA;-- Disable IDENTITY_INSERT for the 'time' table&#xA;SET IDENTITY_INSERT tytani.[dbo].[time] OFF;&#xA;&#xA;-- Drop the temporary table&#xA;DROP TABLE #TempTimeHierarchy;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="195.2,41.6"
+          Id="Package\Date - Execute SQL Task"
+          TopLeft="517.142858243719,339.529411467095" />
+        <NodeLayout
+          Size="196.8,42.4"
+          Id="Package\Junk - Execute SQL Task"
+          TopLeft="394.285714997321,131.117646996486" />
+        <NodeLayout
+          Size="196.8,41.6"
+          Id="Package\Time - Execute SQL Task"
+          TopLeft="463.571429558251,225.588235096381" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

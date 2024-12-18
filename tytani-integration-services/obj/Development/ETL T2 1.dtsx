@@ -1,0 +1,397 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/3/2024 2:38:38 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-3NFB90S"
+  DTS:CreatorName="DESKTOP-3NFB90S\igor"
+  DTS:DTSID="{21E15260-75EA-4126-9191-A86662044EB1}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="ETL T2"
+  DTS:PackageType="5"
+  DTS:VersionBuild="106"
+  DTS:VersionGUID="{A9E6E4C8-1C51-4D22-9224-83E0682C9E67}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[bulk-insert-T2.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{C454B5F6-F24E-405E-BFE2-11550A07DCEC}"
+      DTS:ObjectName="bulk-insert-T2.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\jozef\source\PG-HD-LAB2-DATA-GENERATOR\db-sql\bulk-insert-T2.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[bulk-insert.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{2A4A994A-5B68-443C-93BF-8FA5D9393C18}"
+      DTS:ObjectName="bulk-insert.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\jozef\source\PG-HD-LAB2-DATA-GENERATOR\db-sql\bulk-insert.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[courses.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{F53BFC60-A05F-45D5-B19A-8BFEA16C8A72}"
+      DTS:ObjectName="courses.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\jozef\source\PG-HD-LAB2-DATA-GENERATOR\tsql\etl\courses.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[create.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{BAC3B47C-BECF-46A6-B057-B38553FE3F77}"
+      DTS:ObjectName="create.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\jozef\source\PG-HD-LAB2-DATA-GENERATOR\db-sql\create.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-3NFB90S.tytani_db]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{B7A4B06F-C673-4683-A223-1841F3C907DC}"
+      DTS:ObjectName="DESKTOP-3NFB90S.tytani_db">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-3NFB90S;Initial Catalog=tytani_db;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{B7A4B06F-C673-4683-A223-1841F3C907DC}DESKTOP-3NFB90S.tytani_db;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-3NFB90S.tytani_db.igor]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{34FB4B4A-BBCF-47CA-A6AD-A185B9240779}"
+      DTS:ObjectName="DESKTOP-3NFB90S.tytani_db.igor">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-3NFB90S;Initial Catalog=tytani_db;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{34FB4B4A-BBCF-47CA-A6AD-A185B9240779}DESKTOP-3NFB90S.tytani_db.igor;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[drop.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{DC556D09-8663-4B86-9FA6-5B98AE27C397}"
+      DTS:ObjectName="drop.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\jozef\source\PG-HD-LAB2-DATA-GENERATOR\db-sql\drop.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[fact_attendance.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{CBADCA1F-9B12-475A-BEC1-BC8CF621CC0D}"
+      DTS:ObjectName="fact_attendance.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\jozef\source\PG-HD-LAB2-DATA-GENERATOR\tsql\etl\fact_attendance.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[fact_enrollment.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{4A78F182-A0F5-4718-9654-E9E46B55B8D3}"
+      DTS:ObjectName="fact_enrollment.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\jozef\source\PG-HD-LAB2-DATA-GENERATOR\tsql\etl\fact_enrollment.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[final_surveys.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{9C660ED3-CD80-4FE7-87DB-DFE69C6466F4}"
+      DTS:ObjectName="final_surveys.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\jozef\source\PG-HD-LAB2-DATA-GENERATOR\tsql\etl\final_surveys.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost]"
+      DTS:CreationName="MSOLAP100"
+      DTS:DTSID="{0671BDBC-4669-47D2-BBFC-F6F1354539FB}"
+      DTS:ObjectName="localhost">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Data Source=localhost;PROVIDER=MSOLAP;Impersonation Level=Impersonate;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost 1]"
+      DTS:CreationName="MSOLAP100"
+      DTS:DTSID="{23E899CE-1EF8-48A5-8FC5-731378E84C60}"
+      DTS:ObjectName="localhost 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Data Source=localhost;PROVIDER=MSOLAP;Impersonation Level=Impersonate;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[locations.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{B62B674E-222E-413D-8C04-AC78AB0861DF}"
+      DTS:ObjectName="locations.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\jozef\source\PG-HD-LAB2-DATA-GENERATOR\tsql\etl\locations.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[medium-insert.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{58907595-82D3-4BC4-B6E3-25459A6B3791}"
+      DTS:ObjectName="medium-insert.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\jozef\source\PG-HD-LAB2-DATA-GENERATOR\db-sql\medium-insert.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[small-insert.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{D36BDF0B-19D8-46F0-86D1-526DD8A46F57}"
+      DTS:ObjectName="small-insert.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\jozef\source\PG-HD-LAB2-DATA-GENERATOR\db-sql\small-insert.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[students.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{0DF8C5D0-5742-45F8-B41C-7CE16D2C00F6}"
+      DTS:ObjectName="students.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\jozef\source\PG-HD-LAB2-DATA-GENERATOR\tsql\etl\students.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[subjects.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{E04A7DF2-6B3D-4047-881D-72D639CABA59}"
+      DTS:ObjectName="subjects.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\jozef\source\PG-HD-LAB2-DATA-GENERATOR\tsql\etl\subjects.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[teachers.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{B8154847-4E0F-49B5-B74C-B2635EF3AB9C}"
+      DTS:ObjectName="teachers.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\jozef\source\PG-HD-LAB2-DATA-GENERATOR\tsql\etl\teachers.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[truncate_etl.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{A3290878-F414-4307-B164-DAB1C5B25CBC}"
+      DTS:ObjectName="truncate_etl.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\jozef\source\PG-HD-LAB2-DATA-GENERATOR\dw-sql\truncate_etl.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Bulk Insert - SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{C2CCA688-9E07-423C-8550-4E6DE1BB0783}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Bulk Insert - SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{B7A4B06F-C673-4683-A223-1841F3C907DC}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="bulk-insert-T2.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Create DB tables - SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{3E75348A-CC05-4592-A128-AB6FBB222D7D}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Create DB tables - SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{B7A4B06F-C673-4683-A223-1841F3C907DC}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="create.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Drop DB tables - SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{0BCCF04F-F40F-4C55-BDEE-7D8BF7B9DA36}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Drop DB tables - SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{B7A4B06F-C673-4683-A223-1841F3C907DC}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="drop.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 10]"
+      DTS:CreationName=""
+      DTS:DTSID="{E8EED1B1-D697-4037-A97F-8DCFB0AB6B68}"
+      DTS:From="Package\Create DB tables - SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 10"
+      DTS:To="Package\Bulk Insert - SQL Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 9]"
+      DTS:CreationName=""
+      DTS:DTSID="{9DFB3D05-4F8E-4AAC-B5B8-DB43561979DE}"
+      DTS:From="Package\Drop DB tables - SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 9"
+      DTS:To="Package\Create DB tables - SQL Task" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="210.4,42.4"
+          Id="Package\Bulk Insert - SQL Task"
+          TopLeft="513.516359305178,172.512252811179" />
+        <NodeLayout
+          Size="213.6,42.4"
+          Id="Package\Create DB tables - SQL Task"
+          TopLeft="485.937478276902,102.124996203184" />
+        <NodeLayout
+          Size="212.8,41.6"
+          Id="Package\Drop DB tables - SQL Task"
+          TopLeft="503.593727487606,20.4916663412253" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 10]"
+          TopLeft="592.737478276902,144.524996203184">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="25.978881028276,27.987256607995"
+              Start="0,0"
+              End="25.978881028276,20.487256607995">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,9.9936283039975" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,9.9936283039975"
+                    Point2="0,13.9936283039975"
+                    Point3="4,13.9936283039975" />
+                  <mssgle:LineSegment
+                    End="21.978881028276,13.9936283039975" />
+                  <mssgle:CubicBezierSegment
+                    Point1="21.978881028276,13.9936283039975"
+                    Point2="25.978881028276,13.9936283039975"
+                    Point3="25.978881028276,17.9936283039975" />
+                  <mssgle:LineSegment
+                    End="25.978881028276,20.487256607995" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 9]"
+          TopLeft="609.993727487606,62.0916663412253">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-17.2562492107039,40.0333298619587"
+              Start="0,0"
+              End="-17.2562492107039,32.5333298619587">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.0166649309793" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.0166649309793"
+                    Point2="0,20.0166649309793"
+                    Point3="-4,20.0166649309793" />
+                  <mssgle:LineSegment
+                    End="-13.2562492107039,20.0166649309793" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-13.2562492107039,20.0166649309793"
+                    Point2="-17.2562492107039,20.0166649309793"
+                    Point3="-17.2562492107039,24.0166649309793" />
+                  <mssgle:LineSegment
+                    End="-17.2562492107039,32.5333298619587" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <ConnectionManager
+    design-time-name="Package.ConnectionManagers[localhost]">
+    <ProjectReferenceName></ProjectReferenceName>
+  </ConnectionManager>
+  <ConnectionManager
+    design-time-name="Package.ConnectionManagers[localhost 1]">
+    <ProjectReferenceName></ProjectReferenceName>
+  </ConnectionManager>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

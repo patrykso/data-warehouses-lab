@@ -33,16 +33,6 @@ ON Target.student_id = Source.student_id
     AND Target.date_id = Source.date_id
     AND Target.start_time_id = Source.start_time_id
 
--- When a matching record is found, update it
--- WHEN MATCHED THEN
---     UPDATE SET
---         Target.subject_id = Source.subject_id,
---         Target.teacher_id = Source.teacher_id,
---         Target.location_id = Source.location_id,
---         Target.junk_id = Source.junk_id,
---         Target.rating = Source.rating
-
--- When no match is found, insert a new record
 WHEN NOT MATCHED BY TARGET THEN
 INSERT
     (
