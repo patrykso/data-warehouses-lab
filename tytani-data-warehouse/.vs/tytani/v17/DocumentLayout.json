@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|solutionrelative:Tytani.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|solutionrelative:Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Time.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|solutionrelative:Time.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Locations.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|solutionrelative:Locations.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
-      "RelativeMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|solutionrelative:Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABE324AF-0959-4E33-9EF1-2FE9EA89B89D}|tytani.dwproj|C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Students.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
@@ -42,42 +42,18 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Time.dim [Design]",
-              "DocumentMoniker": "C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Time.dim",
-              "RelativeDocumentMoniker": "Time.dim",
-              "ToolTip": "C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Time.dim [Design]",
-              "RelativeToolTip": "Time.dim [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-17T13:03:32.039Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Locations.dim [Design]",
               "DocumentMoniker": "C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Locations.dim",
               "RelativeDocumentMoniker": "Locations.dim",
               "ToolTip": "C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Locations.dim [Design]",
               "RelativeToolTip": "Locations.dim [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-17T13:03:30.621Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Students.dim [Design]",
-              "DocumentMoniker": "C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Students.dim",
-              "RelativeDocumentMoniker": "Students.dim",
-              "ToolTip": "C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Students.dim [Design]",
-              "RelativeToolTip": "Students.dim [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-17T13:03:20.801Z"
+              "WhenOpened": "2024-12-17T13:03:30.621Z"
             },
             {
               "$type": "Document",
@@ -93,6 +69,17 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Time.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Time.dim",
+              "RelativeDocumentMoniker": "Time.dim",
+              "ToolTip": "C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Time.dim [Design]",
+              "RelativeToolTip": "Time.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-17T13:03:32.039Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Courses.dim [Design]",
               "DocumentMoniker": "C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Courses.dim",
@@ -104,6 +91,28 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Date.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Date.dim",
+              "RelativeDocumentMoniker": "Date.dim",
+              "ToolTip": "C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Date.dim [Design]",
+              "RelativeToolTip": "Date.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-07T19:20:09.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Students.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Students.dim",
+              "RelativeDocumentMoniker": "Students.dim",
+              "ToolTip": "C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Students.dim [Design]",
+              "RelativeToolTip": "Students.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-17T13:03:20.801Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Junk.dim [Design]",
               "DocumentMoniker": "C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Junk.dim",
@@ -112,18 +121,6 @@
               "RelativeToolTip": "Junk.dim [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-12-07T19:26:23.18Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Date.dim [Design]",
-              "DocumentMoniker": "C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Date.dim",
-              "RelativeDocumentMoniker": "Date.dim",
-              "ToolTip": "C:\\Users\\jozef\\source\\PG-HD-LAB2-DATA-GENERATOR\\tytani-data-warehouse\\Date.dim [Design]",
-              "RelativeToolTip": "Date.dim [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-07T19:20:09.488Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
