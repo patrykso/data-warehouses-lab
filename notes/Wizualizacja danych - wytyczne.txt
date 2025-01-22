@@ -1,0 +1,68 @@
+Wizualizacja danych - zadanie
+
+- Tableau lub Power BI (preferowane)
+- Wizualizacja KPI
+- co najmniej 12 wykresów razem
+	- 2 kpi
+	- 10 zapytanianych typów wykresów
+	8 róż
+- 1 dashboard
+- NIE ROBIĆ: kołowy, kołowy 3D, tło powodujące słaby kontrast
+- stosować zalecenia z wykładu
+
+
+
+======
+
+Pdf
+- KPI
+- Opis zapytań
+- zapytania
+
+==============================================
+
+
+Inne notatki
+
+Schemes, outliers, constrasts
+
+
+==============================================
+
+
+OLAP (Online Analytical Processing) -> Ogólna technologia
+
+---
+
+ROLAP (Relational OLAP) ->  w relacyjnych bazach danych (RDBMS), a dane są przechowywane w tabelach w formacie wiersz-kolumna.
+	- Operacje analityczne wykonywane są w czasie rzeczywistym za pomocą dynamicznych zapytań SQL na danych źródłowych.
+	
+Zalety:
+- Duża skalowalność – dobrze działa na bardzo dużych zbiorach danych.
+- Elastyczność – łatwość aktualizacji i integracji z danymi źródłowymi.
+
+Wady:
+- Wolniejsze w wykonywaniu zapytań, ponieważ każda analiza wymaga dynamicznego przetwarzania danych.
+
+---
+
+MOLAP (Multidimensional OLAP) -> Dane są przechowywane w wielowymiarowych kostkach danych (multidimensional cubes), które są preagregowane.
+
+Zalety:
+Bardzo szybkie odpowiedzi na zapytania dzięki wcześniejszemu przetwarzaniu i agregacji danych.
+Wysoka wydajność w analizach wielowymiarowych.
+
+Wady:
+Większe zużycie miejsca na dysku z powodu preagregacji.
+Mniej elastyczne w przypadku dynamicznych zmian danych – wymaga ponownego przetwarzania kostek.
+
+---
+
+HOLAP (Hybrid OLAP) -> Kombinuje cechy ROLAP i MOLAP – dane źródłowe są przechowywane w relacyjnej bazie danych (ROLAP), a preagregaty w kostkach (MOLAP).
+
+Przetwarzanie danych: W zależności od zapytania, system decyduje, czy użyć preagregowanych danych w kostkach, czy danych źródłowych w tabelach.
+Zalety:
+Balansuje między wydajnością (MOLAP) a elastycznością (ROLAP).
+Lepsze zarządzanie przestrzenią dyskową w porównaniu do MOLAP.
+Wady:
+Może być bardziej złożone w implementacji.

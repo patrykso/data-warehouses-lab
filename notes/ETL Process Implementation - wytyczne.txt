@@ -1,0 +1,23 @@
+ETL Process Implementation - zadanie - wytyczne
+
+ETL - Extract, Transfer, Load
+- wykorzystanie danych z generatora
+- tabela faktów: 1000 rekordów
+- tabela wymiarów: 100 rekordów
+- wczytywanie danych w 2 czasach: czas T1 i czas T2
+- implementacja wymiaru SCD
+- Visual Studio
+- procesowana kostka
+- Visual Studio -> 2 projekty
+	- Integration Services
+- wczytanie danych
+	- z bazy danych: MSSQL
+	- z arkuszów: Excel
+- najbardziej zależna -> tabela faktów
+	- zacząć od tabel bez żadnych zależności od innych tabel
+- Junk, Date, Time -> wypełniane są przed procesem ETL
+	- nie patrzymy w dane, tylko wypełniamy wszystkie możliwości -> iloczyn kartezjański
+	- Initial data (katalog SSLS Packages); druga opcja -> skrypty TSQL (Transact SQL)
+- szczegółowa instrukcja na eNauczaniu jak przeprowadzić proces ETL
+- przykład TSQL na eNauczaniu LUB można poprosić, żeby prowadzący wysłał przykład projektu Visual Studio
+
