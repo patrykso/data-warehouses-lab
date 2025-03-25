@@ -1,7 +1,5 @@
 <h2>Business intelligence system made for Date Warehouses (Hurtowanie Danych) course laboratories</h2>
 
-## Overview
-
 This project is a business intelligence system developed for the Data Warehouses course laboratories. It includes tools and scripts for creating, managing, and analyzing data warehouse.
 
 ## Directory Structure
