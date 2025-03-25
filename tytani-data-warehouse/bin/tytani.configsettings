@@ -60,14 +60,6 @@
               </Partition>
             </Partitions>
           </MeasureGroup>
-          <MeasureGroup>
-            <ID>Fact Enrollments 1</ID>
-            <Partitions>
-              <Partition>
-                <ID>Fact Enrollments</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
         </MeasureGroups>
       </Cube>
     </Cubes>

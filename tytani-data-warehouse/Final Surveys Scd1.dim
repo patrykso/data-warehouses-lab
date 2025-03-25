@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4cd19b08-fd57-4d9f-aad0-accf50f88e80" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a57b265c-2c58-420d-98ec-ed37632e5802" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Final Surveys Scd1</ID>
   <Name>Final Surveys Scd1</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -68,54 +68,53 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="c3d5f3e9-453f-4bf5-802c-09a902e4f4db">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="05733279-b11e-44e5-86bb-0a87e68c0ecd">
     <DataSourceViewID>Tytani</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="9e87ea17-8045-4838-adbc-03fe2fdae024">
+  <ErrorConfiguration dwd:design-time-name="387acecb-9298-451a-8d66-78d37a5580b9">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="8596119c-12e7-4895-9680-5ea7116929ea">
+    <Attribute dwd:design-time-name="b42d3810-aa98-467f-ba6c-2e4c5d0d6d16">
       <ID>Id</ID>
       <Name>Id</Name>
       <Usage>Key</Usage>
-      <EstimatedCount>480</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="2715522f-553d-4b51-bcfa-31a571a6eabd">
+        <KeyColumn dwd:design-time-name="12b1bda2-f028-43d0-b333-20d0d9aec8e7">
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ebc2c0ab-23c1-4c9f-b478-ba77b0910c9e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5176a1d1-da0c-4558-ad93-77a01ecdbbfc">
             <TableID>dbo_final_surveys_scd1</TableID>
             <ColumnID>id</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="aec23b5e-ad5c-4865-b9da-da8270cfb437">
+        <AttributeRelationship dwd:design-time-name="7a04c394-d98e-4fba-b4fc-fa8799d6fcb1">
           <AttributeID>Course Interest Rating</AttributeID>
           <Name>Course Interest Rating</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="22130415-85d8-4883-9d11-205ccbae7fce">
+        <AttributeRelationship dwd:design-time-name="9fbb07f0-6a6c-480d-8151-0c8bdc7b2d98">
           <AttributeID>Teacher Engagement Rating</AttributeID>
           <Name>Teacher Engagement Rating</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="d127d1a3-fdb2-43e3-813f-aa0bfec874fe">
+        <AttributeRelationship dwd:design-time-name="61419458-c18f-49e9-a886-2e505acac802">
           <AttributeID>Positive Comments</AttributeID>
           <Name>Positive Comments</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="48ab1c8e-4b12-44aa-bc17-b5f2cb00e1b8">
+        <AttributeRelationship dwd:design-time-name="f2468b36-97b1-4944-a38e-6c74cea0cdb7">
           <AttributeID>Negative Comments</AttributeID>
           <Name>Negative Comments</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="1485ad77-b3dd-4bdf-982a-77348e1a905f">
+        <AttributeRelationship dwd:design-time-name="3910d47f-d365-4a99-8b9a-f6dd2f4c10ed">
           <AttributeID>Continue Course</AttributeID>
           <Name>Continue Course</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b2b57777-093f-4c25-b377-c1be25a53936">
+        <AttributeRelationship dwd:design-time-name="2db4730c-9c82-4749-8e55-67f8147833bb">
           <AttributeID>Filled</AttributeID>
           <Name>Filled</Name>
         </AttributeRelationship>
@@ -124,14 +123,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="6f2193a9-53ad-4ff0-b5a9-688136ec99d1">
+    <Attribute dwd:design-time-name="17eb5ef9-d38f-43ae-956d-12f38b70da83">
       <ID>Course Interest Rating</ID>
       <Name>Course Interest Rating</Name>
-      <EstimatedCount>5</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f78ad652-8688-4144-8784-ba2a72ad0734">
+        <KeyColumn dwd:design-time-name="a43fb740-dabf-4d0f-ba9f-2bb9e025aea7">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ae83f889-28fe-4d4b-9545-625be2a3bc32">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b1ea7974-2682-42a5-bd66-bf0dac78d43b">
             <TableID>dbo_final_surveys_scd1</TableID>
             <ColumnID>course_interest_rating</ColumnID>
           </Source>
@@ -140,14 +138,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="97332cd6-9dac-4ccd-8b08-d4022e182827">
+    <Attribute dwd:design-time-name="9e1677b5-2a95-4089-8c0c-e94b820b1dc2">
       <ID>Teacher Engagement Rating</ID>
       <Name>Teacher Engagement Rating</Name>
-      <EstimatedCount>5</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="71991637-6eec-4524-807c-b18d1b3dfc56">
+        <KeyColumn dwd:design-time-name="098282dd-ea6f-4c3d-92fa-3f75afb4f124">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7f302a04-bc9a-45fa-bc3b-79c7e20f06c3">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="87bddcf0-42b6-463f-b6ee-459b70b66ac2">
             <TableID>dbo_final_surveys_scd1</TableID>
             <ColumnID>teacher_engagement_rating</ColumnID>
           </Source>
@@ -156,14 +153,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="80c5fa74-fa01-4141-ba86-bf767d349e12">
+    <Attribute dwd:design-time-name="2941f431-d592-403c-9ed7-ccd02b985c41">
       <ID>Positive Comments</ID>
       <Name>Positive Comments</Name>
-      <EstimatedCount>7</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6b6fa808-f74b-49b4-b89d-6f31e9cf3749">
+        <KeyColumn dwd:design-time-name="5c7f4033-b4eb-4cec-815a-64b18c2cb114">
           <DataType>WChar</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="782cfaec-5b23-4116-bf20-f83ba4f06dbb">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f9399f8c-9067-4875-bab9-00f2cf6e6e7f">
             <TableID>dbo_final_surveys_scd1</TableID>
             <ColumnID>positive_comments</ColumnID>
           </Source>
@@ -172,14 +168,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="004ca87a-e3df-4964-aa53-6e93a2f22ac7">
+    <Attribute dwd:design-time-name="8d4842ce-695e-4f5a-a73a-a3942871df11">
       <ID>Negative Comments</ID>
       <Name>Negative Comments</Name>
-      <EstimatedCount>7</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="20f929c0-ac47-4178-8493-e62be47b791e">
+        <KeyColumn dwd:design-time-name="3e4e06cd-89e4-4514-a41a-568a7aaec1d7">
           <DataType>WChar</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="27615213-7871-4daf-869c-5ee17d37852a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="de33cb4e-2afc-4316-bc99-b20f8de08530">
             <TableID>dbo_final_surveys_scd1</TableID>
             <ColumnID>negative_comments</ColumnID>
           </Source>
@@ -188,15 +183,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="0ac4fd45-edd1-4a9c-8e81-75f74b5634fa">
+    <Attribute dwd:design-time-name="9bcb741e-0c23-400c-80cb-eb3226a1fe3e">
       <ID>Continue Course</ID>
       <Name>Continue Course</Name>
-      <EstimatedCount>3</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="cf05b7f6-16dd-466a-9379-a3cec5fd5e30">
+        <KeyColumn dwd:design-time-name="699bba44-12f9-44bc-9bfe-82232e8ebddb">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1712af0d-458a-4ef9-9633-2617f4f36387">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cd0e941d-f7da-4212-9f45-1a2255aecbd3">
             <TableID>dbo_final_surveys_scd1</TableID>
             <ColumnID>continue_course</ColumnID>
           </Source>
@@ -205,14 +199,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="5c526da6-9f77-49d7-abfd-b20b5f1aaaa5">
+    <Attribute dwd:design-time-name="c7b9d2d1-5d9d-4d47-b306-bd596b464405">
       <ID>Filled</ID>
       <Name>Filled</Name>
-      <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="24cb4f29-ceeb-45e7-8764-834af965bc8a">
+        <KeyColumn dwd:design-time-name="62aa5c37-d22d-4e9f-b8fe-e236f3f08f10">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="89fcd676-3a18-4a90-b923-64c1b76ca07c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="785b256e-a535-4cac-8cac-57f711f8580e">
             <TableID>dbo_final_surveys_scd1</TableID>
             <ColumnID>filled</ColumnID>
           </Source>

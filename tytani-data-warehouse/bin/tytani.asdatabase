@@ -21,9 +21,9 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1398" scrolltop="-10245" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5948" y="23516" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1398" scrolltop="-10245" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8615" y="14542" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
-                  <ddsxmlobjectstreamwrapper binary="01ee00009001b0300100065461686f6d61" />
+                  <ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" />
                 </font>
                 <mouseicon>
                   <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
@@ -32,7 +32,7 @@
               <layoutmanager>
                 <ddsxmlobj />
               </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="students" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3112" height="3027" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="students" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3112" height="3027" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobjectstreaminitwrapper binary="000e0000280c0000d30b0000" />
                 </control>
@@ -78,6 +78,26 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
           <Value>100</Value>
         </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+          <Value>
+            <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+              <Shapes NodeWidth="148">
+                <Shape Id="Id" Expanded="true">
+                  <Attributes>
+                    <Attribute Id="Id" />
+                    <Attribute Id="City" />
+                    <Attribute Id="Email" />
+                    <Attribute Id="First Name" />
+                    <Attribute Id="Last Name" />
+                    <Attribute Id="Phone Number" />
+                  </Attributes>
+                  <Position x="20" y="20" />
+                </Shape>
+              </Shapes>
+            </DiagramLayout>
+          </Value>
+        </Annotation>
       </Annotations>
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
@@ -96,7 +116,6 @@
           <ID>Id</ID>
           <Name>Id</Name>
           <Usage>Key</Usage>
-          <EstimatedCount>300</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -136,7 +155,6 @@
         <Attribute>
           <ID>First Name</ID>
           <Name>First Name</Name>
-          <EstimatedCount>124</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -153,7 +171,6 @@
         <Attribute>
           <ID>Last Name</ID>
           <Name>Last Name</Name>
-          <EstimatedCount>286</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -170,7 +187,6 @@
         <Attribute>
           <ID>Email</ID>
           <Name>Email</Name>
-          <EstimatedCount>300</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -187,7 +203,6 @@
         <Attribute>
           <ID>Phone Number</ID>
           <Name>Phone Number</Name>
-          <EstimatedCount>300</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -204,7 +219,6 @@
         <Attribute>
           <ID>City</ID>
           <Name>City</Name>
-          <EstimatedCount>150</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -306,7 +320,6 @@
           <ID>Id</ID>
           <Name>Id</Name>
           <Usage>Key</Usage>
-          <EstimatedCount>30</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -346,7 +359,6 @@
         <Attribute>
           <ID>Name</ID>
           <Name>Name</Name>
-          <EstimatedCount>30</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -363,7 +375,6 @@
         <Attribute>
           <ID>Description</ID>
           <Name>Description</Name>
-          <EstimatedCount>30</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -379,7 +390,6 @@
         <Attribute>
           <ID>Course Type</ID>
           <Name>Course Type</Name>
-          <EstimatedCount>5</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -396,7 +406,6 @@
         <Attribute>
           <ID>Is Online</ID>
           <Name>Is Online</Name>
-          <EstimatedCount>2</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Boolean</DataType>
@@ -412,7 +421,6 @@
         <Attribute>
           <ID>Max Students Category</ID>
           <Name>Max Students Category</Name>
-          <EstimatedCount>2</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -514,7 +522,6 @@
           <ID>Id</ID>
           <Name>Id</Name>
           <Usage>Key</Usage>
-          <EstimatedCount>480</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -558,7 +565,6 @@
         <Attribute>
           <ID>Course Interest Rating</ID>
           <Name>Course Interest Rating</Name>
-          <EstimatedCount>5</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -574,7 +580,6 @@
         <Attribute>
           <ID>Teacher Engagement Rating</ID>
           <Name>Teacher Engagement Rating</Name>
-          <EstimatedCount>5</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -590,7 +595,6 @@
         <Attribute>
           <ID>Positive Comments</ID>
           <Name>Positive Comments</Name>
-          <EstimatedCount>7</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -606,7 +610,6 @@
         <Attribute>
           <ID>Negative Comments</ID>
           <Name>Negative Comments</Name>
-          <EstimatedCount>7</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -622,7 +625,6 @@
         <Attribute>
           <ID>Continue Course</ID>
           <Name>Continue Course</Name>
-          <EstimatedCount>3</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -639,7 +641,6 @@
         <Attribute>
           <ID>Filled</ID>
           <Name>Filled</Name>
-          <EstimatedCount>2</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Boolean</DataType>
@@ -665,9 +666,9 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1454" scrolltop="-10605" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8424" y="13737" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1454" scrolltop="-10605" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5948" y="23516" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
-                  <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                  <ddsxmlobjectstreamwrapper binary="01ee00009001b0300100065461686f6d61" />
                 </font>
                 <mouseicon>
                   <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
@@ -676,7 +677,7 @@
               <layoutmanager>
                 <ddsxmlobj />
               </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="date" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="date" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000003090000" />
                 </control>
@@ -759,7 +760,6 @@
           <ID>Id</ID>
           <Name>Id</Name>
           <Usage>Key</Usage>
-          <EstimatedCount>1097</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -792,7 +792,6 @@
           <ID>Month</ID>
           <Name>Month</Name>
           <Type>Months</Type>
-          <EstimatedCount>12</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -809,7 +808,6 @@
           <ID>Year</ID>
           <Name>Year</Name>
           <Type>Years</Type>
-          <EstimatedCount>4</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -826,7 +824,6 @@
           <ID>Day</ID>
           <Name>Day</Name>
           <Type>DayOfMonth</Type>
-          <EstimatedCount>31</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -840,29 +837,6 @@
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
       </Attributes>
-      <Hierarchies>
-        <Hierarchy>
-          <ID>Hierarchy</ID>
-          <Name>DateHierarchy</Name>
-          <Levels>
-            <Level>
-              <ID>Year</ID>
-              <Name>Year</Name>
-              <SourceAttributeID>Year</SourceAttributeID>
-            </Level>
-            <Level>
-              <ID>Month</ID>
-              <Name>Month</Name>
-              <SourceAttributeID>Month</SourceAttributeID>
-            </Level>
-            <Level>
-              <ID>Day</ID>
-              <Name>Day</Name>
-              <SourceAttributeID>Day</SourceAttributeID>
-            </Level>
-          </Levels>
-        </Hierarchy>
-      </Hierarchies>
       <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
     </Dimension>
     <Dimension>
@@ -875,9 +849,9 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1303" scrolltop="-10245" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9652" y="13737" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1303" scrolltop="-10245" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5948" y="23516" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
-                  <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                  <ddsxmlobjectstreamwrapper binary="01ee00009001b0300100065461686f6d61" />
                 </font>
                 <mouseicon>
                   <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
@@ -886,7 +860,7 @@
               <layoutmanager>
                 <ddsxmlobj />
               </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="locations" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3302" height="3027" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="locations" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3302" height="3027" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobjectstreaminitwrapper binary="000e0000e60c0000d30b0000" />
                 </control>
@@ -950,7 +924,6 @@
           <ID>Id</ID>
           <Name>Id</Name>
           <Usage>Key</Usage>
-          <EstimatedCount>249</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -990,7 +963,6 @@
         <Attribute>
           <ID>Name</ID>
           <Name>Name</Name>
-          <EstimatedCount>249</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -1007,7 +979,6 @@
         <Attribute>
           <ID>Postal Code</ID>
           <Name>Postal Code</Name>
-          <EstimatedCount>249</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -1024,7 +995,6 @@
         <Attribute>
           <ID>City</ID>
           <Name>City</Name>
-          <EstimatedCount>137</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -1041,7 +1011,6 @@
         <Attribute>
           <ID>Street</ID>
           <Name>Street</Name>
-          <EstimatedCount>234</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -1058,7 +1027,6 @@
         <Attribute>
           <ID>Building Number</ID>
           <Name>Building Number</Name>
-          <EstimatedCount>219</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -1085,9 +1053,9 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1454" scrolltop="-10605" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9652" y="13737" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1454" scrolltop="-10605" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5948" y="23516" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
-                  <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                  <ddsxmlobjectstreamwrapper binary="01ee00009001b0300100065461686f6d61" />
                 </font>
                 <mouseicon>
                   <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
@@ -1096,7 +1064,7 @@
               <layoutmanager>
                 <ddsxmlobj />
               </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="time" left="-721" top="148" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="time" left="-721" top="148" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000003090000" />
                 </control>
@@ -1161,7 +1129,6 @@
           <ID>Id</ID>
           <Name>Id</Name>
           <Usage>Key</Usage>
-          <EstimatedCount>1440</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -1190,7 +1157,6 @@
           <ID>Hour</ID>
           <Name>Hour</Name>
           <Type>Hours</Type>
-          <EstimatedCount>24</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -1207,7 +1173,6 @@
           <ID>Minute</ID>
           <Name>Minute</Name>
           <Type>Minutes</Type>
-          <EstimatedCount>60</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -1326,7 +1291,6 @@
           <ID>Id</ID>
           <Name>Id</Name>
           <Usage>Key</Usage>
-          <EstimatedCount>4</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -1350,7 +1314,6 @@
         <Attribute>
           <ID>Status</ID>
           <Name>Status</Name>
-          <EstimatedCount>4</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -1452,7 +1415,6 @@
           <ID>Id</ID>
           <Name>Id</Name>
           <Usage>Key</Usage>
-          <EstimatedCount>40</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -1480,7 +1442,6 @@
         <Attribute>
           <ID>Name</ID>
           <Name>Name</Name>
-          <EstimatedCount>40</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -1497,7 +1458,6 @@
         <Attribute>
           <ID>Description</ID>
           <Name>Description</Name>
-          <EstimatedCount>40</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -1618,7 +1578,6 @@
           <ID>Id</ID>
           <Name>Id</Name>
           <Usage>Key</Usage>
-          <EstimatedCount>250</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -1658,7 +1617,6 @@
         <Attribute>
           <ID>First Name</ID>
           <Name>First Name</Name>
-          <EstimatedCount>119</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -1675,7 +1633,6 @@
         <Attribute>
           <ID>Last Name</ID>
           <Name>Last Name</Name>
-          <EstimatedCount>242</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -1692,7 +1649,6 @@
         <Attribute>
           <ID>Email</ID>
           <Name>Email</Name>
-          <EstimatedCount>250</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -1709,7 +1665,6 @@
         <Attribute>
           <ID>Phone Number</ID>
           <Name>Phone Number</Name>
-          <EstimatedCount>250</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -1726,7 +1681,6 @@
         <Attribute>
           <ID>Specialization</ID>
           <Name>Specialization</Name>
-          <EstimatedCount>6</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -1755,9 +1709,9 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="48" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2764" scrolltop="-1466" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="85" x="26501" y="13737" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="48" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="2442" scrolltop="-3193" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="8001" y="14542" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
-                  <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                  <ddsxmlobjectstreamwrapper binary="01ee00009001b0300100065461686f6d61" />
                 </font>
                 <mouseicon>
                   <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
@@ -2138,11 +2092,11 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-          <Value>-2764</Value>
+          <Value>2442</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>-1466</Value>
+          <Value>-3193</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -2154,7 +2108,7 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
-          <Value>85</Value>
+          <Value>75</Value>
         </Annotation>
       </Annotations>
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
@@ -2178,11 +2132,6 @@
               <AttributeID>Day</AttributeID>
             </Attribute>
           </Attributes>
-          <Hierarchies>
-            <Hierarchy>
-              <HierarchyID>Hierarchy</HierarchyID>
-            </Hierarchy>
-          </Hierarchies>
         </Dimension>
         <Dimension>
           <ID>Junk</ID>
@@ -2204,6 +2153,7 @@
           <Attributes>
             <Attribute>
               <AttributeID>Id</AttributeID>
+              <AggregationUsage>Full</AggregationUsage>
             </Attribute>
             <Attribute>
               <AttributeID>First Name</AttributeID>
@@ -2375,6 +2325,7 @@
             <Measure>
               <ID>Price</ID>
               <Name>Price</Name>
+              <AggregateFunction>Max</AggregateFunction>
               <Source>
                 <DataType>Double</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -2417,45 +2368,8 @@
                 </Source>
               </Source>
             </Measure>
-            <Measure>
-              <ID>Fact Enrollments Count 1</ID>
-              <Name>Student ID Count</Name>
-              <AggregateFunction>Count</AggregateFunction>
-              <Source>
-                <DataType>Integer</DataType>
-                <DataSize>4</DataSize>
-                <Source xsi:type="RowBinding">
-                  <TableID>dbo_fact_enrollments</TableID>
-                </Source>
-              </Source>
-            </Measure>
-            <Measure>
-              <ID>Grade Count</ID>
-              <Name>Grade Count 1</Name>
-              <AggregateFunction>Count</AggregateFunction>
-              <DataType>Integer</DataType>
-              <Source>
-                <DataType>Integer</DataType>
-                <Source xsi:type="ColumnBinding">
-                  <TableID>dbo_fact_enrollments</TableID>
-                  <ColumnID>grade</ColumnID>
-                </Source>
-              </Source>
-            </Measure>
-            <Measure>
-              <ID>Grade - Fact Enrollments</ID>
-              <Name>Grade Sum</Name>
-              <Source>
-                <DataType>Integer</DataType>
-                <Source xsi:type="ColumnBinding">
-                  <TableID>dbo_fact_enrollments</TableID>
-                  <ColumnID>grade</ColumnID>
-                </Source>
-              </Source>
-            </Measure>
           </Measures>
           <StorageMode>Molap</StorageMode>
-          <EstimatedRows>314</EstimatedRows>
           <ProcessingMode>Regular</ProcessingMode>
           <Dimensions>
             <Dimension xsi:type="RegularMeasureGroupDimension">
@@ -2550,219 +2464,8 @@
               <StorageMode>Molap</StorageMode>
               <CurrentStorageMode>Molap</CurrentStorageMode>
               <ProcessingMode>Regular</ProcessingMode>
-              <ProactiveCaching>
-                <SilenceInterval>-PT1S</SilenceInterval>
-                <Latency>-PT1S</Latency>
-                <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
-                <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-                <AggregationStorage>MolapOnly</AggregationStorage>
-                <Source xsi:type="ProactiveCachingInheritedBinding">
-                  <NotificationTechnique>Server</NotificationTechnique>
-                </Source>
-              </ProactiveCaching>
-              <EstimatedRows>314</EstimatedRows>
-              <AggregationDesignID>AggregationDesign</AggregationDesignID>
             </Partition>
           </Partitions>
-          <AggregationDesigns>
-            <AggregationDesign>
-              <ID>AggregationDesign</ID>
-              <Name>AggregationDesign</Name>
-              <CreatedTimestamp>2025-01-06T20:25:29.666667Z</CreatedTimestamp>
-              <LastSchemaUpdate>2025-01-06T20:25:29.666667Z</LastSchemaUpdate>
-              <EstimatedRows>314</EstimatedRows>
-              <Dimensions>
-                <Dimension>
-                  <CubeDimensionID>Students</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Id</AttributeID>
-                      <EstimatedCount>300</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>First Name</AttributeID>
-                      <EstimatedCount>124</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Last Name</AttributeID>
-                      <EstimatedCount>286</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Email</AttributeID>
-                      <EstimatedCount>300</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Phone Number</AttributeID>
-                      <EstimatedCount>300</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>City</AttributeID>
-                      <EstimatedCount>150</EstimatedCount>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Courses</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Id</AttributeID>
-                      <EstimatedCount>30</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Name</AttributeID>
-                      <EstimatedCount>30</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Description</AttributeID>
-                      <EstimatedCount>30</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Course Type</AttributeID>
-                      <EstimatedCount>5</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Is Online</AttributeID>
-                      <EstimatedCount>2</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Max Students Category</AttributeID>
-                      <EstimatedCount>2</EstimatedCount>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Final Surveys Scd1</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Id</AttributeID>
-                      <EstimatedCount>480</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Course Interest Rating</AttributeID>
-                      <EstimatedCount>5</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Teacher Engagement Rating</AttributeID>
-                      <EstimatedCount>5</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Positive Comments</AttributeID>
-                      <EstimatedCount>7</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Negative Comments</AttributeID>
-                      <EstimatedCount>7</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Continue Course</AttributeID>
-                      <EstimatedCount>3</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Filled</AttributeID>
-                      <EstimatedCount>2</EstimatedCount>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Id</AttributeID>
-                      <EstimatedCount>1097</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Month</AttributeID>
-                      <EstimatedCount>12</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Year</AttributeID>
-                      <EstimatedCount>4</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Day</AttributeID>
-                      <EstimatedCount>31</EstimatedCount>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-              </Dimensions>
-              <Aggregations>
-                <Aggregation>
-                  <ID>Aggregation 0</ID>
-                  <Name>Aggregation 0</Name>
-                  <Dimensions>
-                    <Dimension>
-                      <CubeDimensionID>Students</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Courses</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Final Surveys Scd1</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Date</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Year</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                  </Dimensions>
-                </Aggregation>
-                <Aggregation>
-                  <ID>Aggregation 1</ID>
-                  <Name>Aggregation 1</Name>
-                  <Dimensions>
-                    <Dimension>
-                      <CubeDimensionID>Students</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Courses</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Id</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Final Surveys Scd1</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Date</CubeDimensionID>
-                    </Dimension>
-                  </Dimensions>
-                </Aggregation>
-                <Aggregation>
-                  <ID>Aggregation 2</ID>
-                  <Name>Aggregation 2</Name>
-                  <Dimensions>
-                    <Dimension>
-                      <CubeDimensionID>Students</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Courses</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Final Surveys Scd1</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Date</CubeDimensionID>
-                    </Dimension>
-                  </Dimensions>
-                </Aggregation>
-              </Aggregations>
-            </AggregationDesign>
-          </AggregationDesigns>
-          <ProactiveCaching>
-            <SilenceInterval>-PT1S</SilenceInterval>
-            <Latency>-PT1S</Latency>
-            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
-            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-            <AggregationStorage>MolapOnly</AggregationStorage>
-            <Source xsi:type="ProactiveCachingInheritedBinding">
-              <NotificationTechnique>Server</NotificationTechnique>
-            </Source>
-          </ProactiveCaching>
         </MeasureGroup>
         <MeasureGroup>
           <ID>Fact Attendance</ID>
@@ -2774,7 +2477,8 @@
           <Measures>
             <Measure>
               <ID>Rating</ID>
-              <Name>Rating Sum</Name>
+              <Name>Rating</Name>
+              <AggregateFunction>Min</AggregateFunction>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -2795,22 +2499,8 @@
                 </Source>
               </Source>
             </Measure>
-            <Measure>
-              <ID>Rating Count</ID>
-              <Name>Rating Count 1</Name>
-              <AggregateFunction>Count</AggregateFunction>
-              <DataType>Integer</DataType>
-              <Source>
-                <DataType>Integer</DataType>
-                <Source xsi:type="ColumnBinding">
-                  <TableID>dbo_fact_attendance</TableID>
-                  <ColumnID>rating</ColumnID>
-                </Source>
-              </Source>
-            </Measure>
           </Measures>
           <StorageMode>Molap</StorageMode>
-          <EstimatedRows>1068000</EstimatedRows>
           <ProcessingMode>Regular</ProcessingMode>
           <Dimensions>
             <Dimension xsi:type="RegularMeasureGroupDimension">
@@ -2981,1154 +2671,8 @@
               <StorageMode>Molap</StorageMode>
               <CurrentStorageMode>Molap</CurrentStorageMode>
               <ProcessingMode>Regular</ProcessingMode>
-              <ProactiveCaching>
-                <SilenceInterval>-PT1S</SilenceInterval>
-                <Latency>-PT1S</Latency>
-                <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
-                <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-                <AggregationStorage>MolapOnly</AggregationStorage>
-                <Source xsi:type="ProactiveCachingInheritedBinding">
-                  <NotificationTechnique>Server</NotificationTechnique>
-                </Source>
-              </ProactiveCaching>
-              <EstimatedRows>1068000</EstimatedRows>
-              <AggregationDesignID>AggregationDesign</AggregationDesignID>
             </Partition>
           </Partitions>
-          <AggregationDesigns>
-            <AggregationDesign>
-              <ID>AggregationDesign</ID>
-              <Name>AggregationDesign</Name>
-              <CreatedTimestamp>2025-01-06T20:26:18.74Z</CreatedTimestamp>
-              <LastSchemaUpdate>2025-01-06T20:26:18.74Z</LastSchemaUpdate>
-              <EstimatedRows>1068000</EstimatedRows>
-              <Dimensions>
-                <Dimension>
-                  <CubeDimensionID>Locations</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Id</AttributeID>
-                      <EstimatedCount>249</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Name</AttributeID>
-                      <EstimatedCount>249</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Postal Code</AttributeID>
-                      <EstimatedCount>249</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>City</AttributeID>
-                      <EstimatedCount>137</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Street</AttributeID>
-                      <EstimatedCount>234</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Building Number</AttributeID>
-                      <EstimatedCount>219</EstimatedCount>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Students</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Id</AttributeID>
-                      <EstimatedCount>300</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>First Name</AttributeID>
-                      <EstimatedCount>124</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Last Name</AttributeID>
-                      <EstimatedCount>286</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Email</AttributeID>
-                      <EstimatedCount>300</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Phone Number</AttributeID>
-                      <EstimatedCount>300</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>City</AttributeID>
-                      <EstimatedCount>150</EstimatedCount>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Time</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Id</AttributeID>
-                      <EstimatedCount>1440</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Hour</AttributeID>
-                      <EstimatedCount>24</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Minute</AttributeID>
-                      <EstimatedCount>60</EstimatedCount>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Junk</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Id</AttributeID>
-                      <EstimatedCount>4</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Status</AttributeID>
-                      <EstimatedCount>4</EstimatedCount>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Subjects</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Id</AttributeID>
-                      <EstimatedCount>40</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Name</AttributeID>
-                      <EstimatedCount>40</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Description</AttributeID>
-                      <EstimatedCount>40</EstimatedCount>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Courses</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Id</AttributeID>
-                      <EstimatedCount>30</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Name</AttributeID>
-                      <EstimatedCount>30</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Description</AttributeID>
-                      <EstimatedCount>30</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Course Type</AttributeID>
-                      <EstimatedCount>5</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Is Online</AttributeID>
-                      <EstimatedCount>2</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Max Students Category</AttributeID>
-                      <EstimatedCount>2</EstimatedCount>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Id</AttributeID>
-                      <EstimatedCount>1097</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Month</AttributeID>
-                      <EstimatedCount>12</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Year</AttributeID>
-                      <EstimatedCount>4</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Day</AttributeID>
-                      <EstimatedCount>31</EstimatedCount>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Teachers</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Id</AttributeID>
-                      <EstimatedCount>250</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>First Name</AttributeID>
-                      <EstimatedCount>119</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Last Name</AttributeID>
-                      <EstimatedCount>242</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Email</AttributeID>
-                      <EstimatedCount>250</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Phone Number</AttributeID>
-                      <EstimatedCount>250</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Specialization</AttributeID>
-                      <EstimatedCount>6</EstimatedCount>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-              </Dimensions>
-              <Aggregations>
-                <Aggregation>
-                  <ID>Aggregation 0</ID>
-                  <Name>Aggregation 0</Name>
-                  <Dimensions>
-                    <Dimension>
-                      <CubeDimensionID>Locations</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Students</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Time</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Hour</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Junk</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Id</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Subjects</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Courses</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Date</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Year</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Teachers</CubeDimensionID>
-                    </Dimension>
-                  </Dimensions>
-                </Aggregation>
-                <Aggregation>
-                  <ID>Aggregation 1</ID>
-                  <Name>Aggregation 1</Name>
-                  <Dimensions>
-                    <Dimension>
-                      <CubeDimensionID>Locations</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Students</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Time</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Junk</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Id</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Subjects</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Courses</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Id</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Date</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Year</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Teachers</CubeDimensionID>
-                    </Dimension>
-                  </Dimensions>
-                </Aggregation>
-                <Aggregation>
-                  <ID>Aggregation 2</ID>
-                  <Name>Aggregation 2</Name>
-                  <Dimensions>
-                    <Dimension>
-                      <CubeDimensionID>Locations</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Students</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Time</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Junk</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Id</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Subjects</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Id</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Courses</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Date</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Year</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Teachers</CubeDimensionID>
-                    </Dimension>
-                  </Dimensions>
-                </Aggregation>
-                <Aggregation>
-                  <ID>Aggregation 3</ID>
-                  <Name>Aggregation 3</Name>
-                  <Dimensions>
-                    <Dimension>
-                      <CubeDimensionID>Locations</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Students</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Time</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Hour</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Junk</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Subjects</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Courses</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Id</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Date</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Teachers</CubeDimensionID>
-                    </Dimension>
-                  </Dimensions>
-                </Aggregation>
-                <Aggregation>
-                  <ID>Aggregation 4</ID>
-                  <Name>Aggregation 4</Name>
-                  <Dimensions>
-                    <Dimension>
-                      <CubeDimensionID>Locations</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Students</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Time</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Hour</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Junk</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Subjects</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Id</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Courses</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Date</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Teachers</CubeDimensionID>
-                    </Dimension>
-                  </Dimensions>
-                </Aggregation>
-                <Aggregation>
-                  <ID>Aggregation 5</ID>
-                  <Name>Aggregation 5</Name>
-                  <Dimensions>
-                    <Dimension>
-                      <CubeDimensionID>Locations</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Id</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Students</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Time</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Junk</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Id</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Subjects</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Courses</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Date</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Teachers</CubeDimensionID>
-                    </Dimension>
-                  </Dimensions>
-                </Aggregation>
-                <Aggregation>
-                  <ID>Aggregation 6</ID>
-                  <Name>Aggregation 6</Name>
-                  <Dimensions>
-                    <Dimension>
-                      <CubeDimensionID>Locations</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Id</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Students</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Time</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Junk</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Subjects</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Courses</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Date</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Year</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Teachers</CubeDimensionID>
-                    </Dimension>
-                  </Dimensions>
-                </Aggregation>
-                <Aggregation>
-                  <ID>Aggregation 7</ID>
-                  <Name>Aggregation 7</Name>
-                  <Dimensions>
-                    <Dimension>
-                      <CubeDimensionID>Locations</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Students</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Time</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Junk</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Id</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Subjects</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Courses</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Date</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Teachers</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Id</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                  </Dimensions>
-                </Aggregation>
-                <Aggregation>
-                  <ID>Aggregation 8</ID>
-                  <Name>Aggregation 8</Name>
-                  <Dimensions>
-                    <Dimension>
-                      <CubeDimensionID>Locations</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Students</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Time</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Junk</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Subjects</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Courses</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Date</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Year</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Teachers</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Id</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                  </Dimensions>
-                </Aggregation>
-                <Aggregation>
-                  <ID>Aggregation 9</ID>
-                  <Name>Aggregation 9</Name>
-                  <Dimensions>
-                    <Dimension>
-                      <CubeDimensionID>Locations</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Students</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Time</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Junk</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Subjects</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Courses</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Date</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Id</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Teachers</CubeDimensionID>
-                    </Dimension>
-                  </Dimensions>
-                </Aggregation>
-                <Aggregation>
-                  <ID>Aggregation a</ID>
-                  <Name>Aggregation a</Name>
-                  <Dimensions>
-                    <Dimension>
-                      <CubeDimensionID>Locations</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Students</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Id</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Time</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Junk</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Id</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Subjects</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Courses</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Date</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Teachers</CubeDimensionID>
-                    </Dimension>
-                  </Dimensions>
-                </Aggregation>
-                <Aggregation>
-                  <ID>Aggregation b</ID>
-                  <Name>Aggregation b</Name>
-                  <Dimensions>
-                    <Dimension>
-                      <CubeDimensionID>Locations</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Students</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Id</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Time</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Junk</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Subjects</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Courses</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Date</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Year</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Teachers</CubeDimensionID>
-                    </Dimension>
-                  </Dimensions>
-                </Aggregation>
-                <Aggregation>
-                  <ID>Aggregation c</ID>
-                  <Name>Aggregation c</Name>
-                  <Dimensions>
-                    <Dimension>
-                      <CubeDimensionID>Locations</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Students</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Time</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Junk</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Subjects</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Id</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Courses</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Id</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Date</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Teachers</CubeDimensionID>
-                    </Dimension>
-                  </Dimensions>
-                </Aggregation>
-                <Aggregation>
-                  <ID>Aggregation d</ID>
-                  <Name>Aggregation d</Name>
-                  <Dimensions>
-                    <Dimension>
-                      <CubeDimensionID>Locations</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Students</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Time</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Id</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Junk</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Subjects</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Courses</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Date</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Teachers</CubeDimensionID>
-                    </Dimension>
-                  </Dimensions>
-                </Aggregation>
-                <Aggregation>
-                  <ID>Aggregation e</ID>
-                  <Name>Aggregation e</Name>
-                  <Dimensions>
-                    <Dimension>
-                      <CubeDimensionID>Locations</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Students</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Time</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Junk</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Subjects</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Courses</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Date</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Teachers</CubeDimensionID>
-                    </Dimension>
-                  </Dimensions>
-                </Aggregation>
-              </Aggregations>
-            </AggregationDesign>
-          </AggregationDesigns>
-          <ProactiveCaching>
-            <SilenceInterval>-PT1S</SilenceInterval>
-            <Latency>-PT1S</Latency>
-            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
-            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-            <AggregationStorage>MolapOnly</AggregationStorage>
-            <Source xsi:type="ProactiveCachingInheritedBinding">
-              <NotificationTechnique>Server</NotificationTechnique>
-            </Source>
-          </ProactiveCaching>
-        </MeasureGroup>
-        <MeasureGroup>
-          <ID>Fact Enrollments 1</ID>
-          <Name>Fact Enrollments 1</Name>
-          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-          <State>Unprocessed</State>
-          <Measures>
-            <Measure>
-              <ID>Student Id Distinct Count</ID>
-              <Name>Student ID Count Distinct</Name>
-              <AggregateFunction>DistinctCount</AggregateFunction>
-              <DataType>Integer</DataType>
-              <Source>
-                <DataType>Integer</DataType>
-                <Source xsi:type="ColumnBinding">
-                  <TableID>dbo_fact_enrollments</TableID>
-                  <ColumnID>student_id</ColumnID>
-                </Source>
-              </Source>
-            </Measure>
-          </Measures>
-          <StorageMode>Molap</StorageMode>
-          <EstimatedRows>314</EstimatedRows>
-          <ProcessingMode>Regular</ProcessingMode>
-          <Dimensions>
-            <Dimension xsi:type="RegularMeasureGroupDimension">
-              <CubeDimensionID>Students</CubeDimensionID>
-              <Attributes>
-                <Attribute>
-                  <AttributeID>Id</AttributeID>
-                  <KeyColumns>
-                    <KeyColumn>
-                      <DataType>Integer</DataType>
-                      <NullProcessing>UnknownMember</NullProcessing>
-                      <Source xsi:type="ColumnBinding">
-                        <TableID>dbo_fact_enrollments</TableID>
-                        <ColumnID>student_id</ColumnID>
-                      </Source>
-                    </KeyColumn>
-                  </KeyColumns>
-                  <Type>Granularity</Type>
-                </Attribute>
-              </Attributes>
-            </Dimension>
-            <Dimension xsi:type="RegularMeasureGroupDimension">
-              <CubeDimensionID>Courses</CubeDimensionID>
-              <Attributes>
-                <Attribute>
-                  <AttributeID>Id</AttributeID>
-                  <KeyColumns>
-                    <KeyColumn>
-                      <DataType>Integer</DataType>
-                      <NullProcessing>UnknownMember</NullProcessing>
-                      <Source xsi:type="ColumnBinding">
-                        <TableID>dbo_fact_enrollments</TableID>
-                        <ColumnID>course_id</ColumnID>
-                      </Source>
-                    </KeyColumn>
-                  </KeyColumns>
-                  <Type>Granularity</Type>
-                </Attribute>
-              </Attributes>
-            </Dimension>
-            <Dimension xsi:type="RegularMeasureGroupDimension">
-              <CubeDimensionID>Final Surveys Scd1</CubeDimensionID>
-              <Attributes>
-                <Attribute>
-                  <AttributeID>Id</AttributeID>
-                  <KeyColumns>
-                    <KeyColumn>
-                      <DataType>Integer</DataType>
-                      <NullProcessing>UnknownMember</NullProcessing>
-                      <Source xsi:type="ColumnBinding">
-                        <TableID>dbo_fact_enrollments</TableID>
-                        <ColumnID>final_survey_id</ColumnID>
-                      </Source>
-                    </KeyColumn>
-                  </KeyColumns>
-                  <Type>Granularity</Type>
-                </Attribute>
-              </Attributes>
-            </Dimension>
-            <Dimension xsi:type="RegularMeasureGroupDimension">
-              <CubeDimensionID>Date</CubeDimensionID>
-              <Attributes>
-                <Attribute>
-                  <AttributeID>Id</AttributeID>
-                  <KeyColumns>
-                    <KeyColumn>
-                      <DataType>Integer</DataType>
-                      <NullProcessing>UnknownMember</NullProcessing>
-                      <Source xsi:type="ColumnBinding">
-                        <TableID>dbo_fact_enrollments</TableID>
-                        <ColumnID>date_id</ColumnID>
-                      </Source>
-                    </KeyColumn>
-                  </KeyColumns>
-                  <Type>Granularity</Type>
-                </Attribute>
-              </Attributes>
-            </Dimension>
-          </Dimensions>
-          <Partitions>
-            <Partition>
-              <ID>Fact Enrollments</ID>
-              <Name>Fact Enrollments</Name>
-              <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-              <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-              <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-              <State>Unprocessed</State>
-              <Source xsi:type="DsvTableBinding">
-                <DataSourceViewID>Tytani</DataSourceViewID>
-                <TableID>dbo_fact_enrollments</TableID>
-              </Source>
-              <StorageMode>Molap</StorageMode>
-              <CurrentStorageMode>Molap</CurrentStorageMode>
-              <ProcessingMode>Regular</ProcessingMode>
-              <ProactiveCaching>
-                <SilenceInterval>-PT1S</SilenceInterval>
-                <Latency>-PT1S</Latency>
-                <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
-                <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-                <AggregationStorage>MolapOnly</AggregationStorage>
-                <Source xsi:type="ProactiveCachingInheritedBinding">
-                  <NotificationTechnique>Server</NotificationTechnique>
-                </Source>
-              </ProactiveCaching>
-              <EstimatedRows>314</EstimatedRows>
-              <AggregationDesignID>AggregationDesign</AggregationDesignID>
-            </Partition>
-          </Partitions>
-          <AggregationDesigns>
-            <AggregationDesign>
-              <ID>AggregationDesign</ID>
-              <Name>AggregationDesign</Name>
-              <CreatedTimestamp>2025-01-06T20:26:44.526667Z</CreatedTimestamp>
-              <LastSchemaUpdate>2025-01-06T20:26:44.526667Z</LastSchemaUpdate>
-              <EstimatedRows>314</EstimatedRows>
-              <Dimensions>
-                <Dimension>
-                  <CubeDimensionID>Students</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Id</AttributeID>
-                      <EstimatedCount>300</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>First Name</AttributeID>
-                      <EstimatedCount>124</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Last Name</AttributeID>
-                      <EstimatedCount>286</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Email</AttributeID>
-                      <EstimatedCount>300</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Phone Number</AttributeID>
-                      <EstimatedCount>300</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>City</AttributeID>
-                      <EstimatedCount>150</EstimatedCount>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Courses</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Id</AttributeID>
-                      <EstimatedCount>30</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Name</AttributeID>
-                      <EstimatedCount>30</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Description</AttributeID>
-                      <EstimatedCount>30</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Course Type</AttributeID>
-                      <EstimatedCount>5</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Is Online</AttributeID>
-                      <EstimatedCount>2</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Max Students Category</AttributeID>
-                      <EstimatedCount>2</EstimatedCount>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Final Surveys Scd1</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Id</AttributeID>
-                      <EstimatedCount>480</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Course Interest Rating</AttributeID>
-                      <EstimatedCount>5</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Teacher Engagement Rating</AttributeID>
-                      <EstimatedCount>5</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Positive Comments</AttributeID>
-                      <EstimatedCount>7</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Negative Comments</AttributeID>
-                      <EstimatedCount>7</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Continue Course</AttributeID>
-                      <EstimatedCount>3</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Filled</AttributeID>
-                      <EstimatedCount>2</EstimatedCount>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Id</AttributeID>
-                      <EstimatedCount>1097</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Month</AttributeID>
-                      <EstimatedCount>12</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Year</AttributeID>
-                      <EstimatedCount>4</EstimatedCount>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Day</AttributeID>
-                      <EstimatedCount>31</EstimatedCount>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-              </Dimensions>
-              <Aggregations>
-                <Aggregation>
-                  <ID>Aggregation 0</ID>
-                  <Name>Aggregation 0</Name>
-                  <Dimensions>
-                    <Dimension>
-                      <CubeDimensionID>Students</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Courses</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Final Surveys Scd1</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Date</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Year</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                  </Dimensions>
-                </Aggregation>
-                <Aggregation>
-                  <ID>Aggregation 1</ID>
-                  <Name>Aggregation 1</Name>
-                  <Dimensions>
-                    <Dimension>
-                      <CubeDimensionID>Students</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Courses</CubeDimensionID>
-                      <Attributes>
-                        <Attribute>
-                          <AttributeID>Id</AttributeID>
-                        </Attribute>
-                      </Attributes>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Final Surveys Scd1</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Date</CubeDimensionID>
-                    </Dimension>
-                  </Dimensions>
-                </Aggregation>
-                <Aggregation>
-                  <ID>Aggregation 2</ID>
-                  <Name>Aggregation 2</Name>
-                  <Dimensions>
-                    <Dimension>
-                      <CubeDimensionID>Students</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Courses</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Final Surveys Scd1</CubeDimensionID>
-                    </Dimension>
-                    <Dimension>
-                      <CubeDimensionID>Date</CubeDimensionID>
-                    </Dimension>
-                  </Dimensions>
-                </Aggregation>
-              </Aggregations>
-            </AggregationDesign>
-          </AggregationDesigns>
-          <ProactiveCaching>
-            <SilenceInterval>-PT1S</SilenceInterval>
-            <Latency>-PT1S</Latency>
-            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
-            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-            <AggregationStorage>MolapOnly</AggregationStorage>
-            <Source xsi:type="ProactiveCachingInheritedBinding">
-              <NotificationTechnique>Server</NotificationTechnique>
-            </Source>
-          </ProactiveCaching>
         </MeasureGroup>
       </MeasureGroups>
       <Source>
@@ -4142,56 +2686,23 @@
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <Commands>
             <Command>
-              <Text>CALCULATE;   
+              <Text>CALCULATE; 
 CREATE MEMBER CURRENTCUBE.[Measures].Frekwencja
  AS [Measures].[Fact Attendance Count], 
-VISIBLE = 1;   
+VISIBLE = 1  ; 
 CREATE MEMBER CURRENTCUBE.[Measures].AVG_Rating
- AS [Measures].[Rating Sum]/[Measures].[Rating Count 1], 
-VISIBLE = 1;  
-CREATE MEMBER CURRENTCUBE.[Measures].RetentionRate
- AS [Measures].[Student ID Count Distinct]/[Measures].[Student ID Count], 
-VISIBLE = 1;   
+ AS AVG([Measures].[Rating]), 
+VISIBLE = 1  ; 
 CREATE MEMBER CURRENTCUBE.[Measures].AVG_Final_Survey_teacher_engagement
  AS AVG([Final Surveys Scd1].[Teacher Engagement Rating]), 
-VISIBLE = 1;   
+VISIBLE = 1  ; 
 CREATE MEMBER CURRENTCUBE.[Measures].AVG_Grade
- AS [Measures].[Grade Sum] / [Measures].[Grade Count 1], 
+ AS AVG([Measures].[Rating]), 
 VISIBLE = 1  ; </Text>
             </Command>
           </Commands>
         </MdxScript>
       </MdxScripts>
-      <Kpis>
-        <Kpi>
-          <ID>KPI</ID>
-          <Name>AverageLessonRating</Name>
-          <AssociatedMeasureGroupID>Fact Attendance</AssociatedMeasureGroupID>
-          <Value>[Measures].[Grade Sum]/[Measures].[Grade Count]</Value>
-          <Goal>3</Goal>
-          <Status>IIf(KPIVALUE("AverageLessonRating") &gt; KPIGoal("AverageLessonRating"), 1, -1)
-</Status>
-          <Trend></Trend>
-          <TrendGraphic>Standard Arrow</TrendGraphic>
-          <StatusGraphic>Smiley Face</StatusGraphic>
-        </Kpi>
-        <Kpi>
-          <ID>KPI 1</ID>
-          <Name>RetentionRate</Name>
-          <AssociatedMeasureGroupID>Fact Enrollments</AssociatedMeasureGroupID>
-          <Value>[Measures].[Student ID Count Distinct]/[Measures].[Student ID Count]</Value>
-          <Goal>0.5</Goal>
-          <Status>IIf(KPIVALUE("RetentionRate") &gt; KPIGoal("RetentionRate"), 1, -1)
-
-
-
-
-
-</Status>
-          <TrendGraphic>Standard Arrow</TrendGraphic>
-          <StatusGraphic>Gauge - Ascending</StatusGraphic>
-        </Kpi>
-      </Kpis>
     </Cube>
   </Cubes>
   <DataSources>
